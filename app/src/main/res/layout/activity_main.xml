@@ -86,7 +86,7 @@
             android:id="@+id/Puncture"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Puncture"
+            android:text="Punctures"
             android:gravity="center"
             android:layout_alignBottom="@id/Cut"
             android:textColor="#228B22"
