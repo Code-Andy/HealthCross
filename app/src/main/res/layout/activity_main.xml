@@ -103,6 +103,15 @@
             android:textSize="38sp"/>
 
         <TextView
+            android:id="@+id/Bones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bones"
+            android:gravity="center"
+            android:textColor="#228B22"
+            android:textSize="38sp"/>
+
+        <TextView
             android:id="@+id/Burns"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -119,7 +128,6 @@
             android:gravity="center"
             android:textColor="#228B22"
             android:textSize="38sp"/>
-
 
 
     </LinearLayout>
