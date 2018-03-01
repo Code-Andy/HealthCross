@@ -79,33 +79,46 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Cut"
+            android:gravity="center"
             android:textColor="#228B22"
-            android:textSize="24sp"/>
+            android:textSize="38sp"/>
 
         <TextView
             android:id="@+id/Puncture"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Puncture"
+            android:gravity="center"
             android:layout_alignBottom="@id/Cut"
             android:textColor="#228B22"
-            android:textSize="24sp"/>
+            android:textSize="38sp"/>
 
         <TextView
             android:id="@+id/Scrapes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Scrapes"
+            android:gravity="center"
             android:textColor="#228B22"
-            android:textSize="24sp"/>
+            android:textSize="38sp"/>
 
         <TextView
             android:id="@+id/Burns"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Burns"
+            android:gravity="center"
             android:textColor="#228B22"
-            android:textSize="24sp"/>
+            android:textSize="38sp"/>
+
+        <TextView
+            android:id="@+id/Remedies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remedies"
+            android:gravity="center"
+            android:textColor="#228B22"
+            android:textSize="38sp"/>
 
 
 
