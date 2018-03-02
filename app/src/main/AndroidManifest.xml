@@ -26,7 +26,6 @@
         <activity android:name=".NewsActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".InfoActivity" />
-        <activity android:name=".EmergencyActivity"></activity>
     </application>
 
 </manifest>

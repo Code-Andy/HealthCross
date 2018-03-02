@@ -30,11 +30,10 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public boolean onNavigationItemSelected(MenuItem menuItem) {
                         // set item as selected to persist highlight
-                        menuItem.setChecked(true);
                         // close drawer when item is tapped
                         mDrawerLayout.closeDrawers();
 
-                        Intent i = new Intent(MainActivity.this, TrackerActivity.class);
+                        Intent i = new Intent(MainActivity.this, InfoActivity.class);
                         startActivity(i);
 
                         // Add code here to update the UI based on the item selected
