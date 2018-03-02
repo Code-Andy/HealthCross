@@ -39,23 +39,23 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void openTrackerView(View view) {
-        Intent i = new Intent(this, TrackerActivity.class);
-        startActivity(i);
+        Intent t = new Intent(this, TrackerActivity.class);
+        startActivity(t);
     }
 
     public void openNewsView(View view) {
-        Intent l = new Intent(this, NewsActivity.class);
-        startActivity(l);
+        Intent n = new Intent(this, NewsActivity.class);
+        startActivity(n);
     }
 
     public void openSettingsView(View view) {
-        Intent k = new Intent(this, SettingsActivity.class);
-        startActivity(k);
+        Intent s = new Intent(this, SettingsActivity.class);
+        startActivity(s);
     }
 
     public void openInfoView(View view) {
-        Intent s = new Intent(this, InfoActivity.class);
-        startActivity(s);
+        Intent i = new Intent(this, InfoActivity.class);
+        startActivity(i);
     }
 
 
