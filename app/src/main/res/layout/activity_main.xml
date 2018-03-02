@@ -7,9 +7,26 @@
     tools:context="com.examples.android.healthcross.MainActivity">
 
 
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="210dp"
+        android:background="@drawable/layout_border">
+
+        <TextView
+            android:id="@+id/Display"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Display"
+            android:textColor="#228B22"
+            android:textSize="24sp" />
+    </ScrollView>
+
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="270dp"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="210dp"
         android:orientation="vertical"
         android:background="@drawable/layout_border">
 
@@ -17,7 +34,7 @@
             android:id="@+id/Cut"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cuts"
+            android:text="Cut"
             android:gravity="center"
             android:textColor="#228B22"
             android:textSize="38sp"/>
@@ -71,25 +88,6 @@
 
     </LinearLayout>
 
-
-
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_marginTop="270dp"
-        android:background="@drawable/layout_border">
-
-        <TextView
-            android:id="@+id/Display"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="Display"
-            android:textColor="#228B22"
-            android:textSize="24sp" />
-    </ScrollView>
-
     <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -98,6 +96,7 @@
         <android.support.design.widget.NavigationView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            app:showAsAction="always"
             app:menu="@menu/navigation_menu"
             android:layout_gravity="start"
             android:id="@+id/navview"/>
