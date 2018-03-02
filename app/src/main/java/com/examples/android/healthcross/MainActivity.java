@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
              return true;
          }
 
-         if (id == R.id.mybutton) {
+         if (id == R.id.Emergency) {
 
          }
 
