@@ -44,18 +44,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openNewsView(View view) {
-        Intent i = new Intent(this, NewsActivity.class);
-        startActivity(i);
+        Intent l = new Intent(this, NewsActivity.class);
+        startActivity(l);
     }
 
     public void openSettingsView(View view) {
-        Intent i = new Intent(this, SettingsActivity.class);
-        startActivity(i);
+        Intent k = new Intent(this, SettingsActivity.class);
+        startActivity(k);
     }
 
     public void openInfoView(View view) {
-        Intent i = new Intent(this, InfoActivity.class);
-        startActivity(i);
+        Intent s = new Intent(this, InfoActivity.class);
+        startActivity(s);
     }
 
 
