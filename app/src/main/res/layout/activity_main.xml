@@ -17,7 +17,7 @@
             android:id="@+id/Cut"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cut"
+            android:text="Cuts"
             android:gravity="center"
             android:textColor="#228B22"
             android:textSize="38sp"/>
