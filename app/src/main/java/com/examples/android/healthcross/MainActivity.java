@@ -1,5 +1,6 @@
 package com.examples.android.healthcross;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -32,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
                         menuItem.setChecked(true);
                         // close drawer when item is tapped
                         mDrawerLayout.closeDrawers();
+
+                        Intent i = new Intent(MainActivity.this, TrackerActivity.class);
+                        startActivity(i);
 
                         // Add code here to update the UI based on the item selected
                         // For example, swap UI fragments here
