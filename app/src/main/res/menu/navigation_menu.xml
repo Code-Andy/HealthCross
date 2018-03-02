@@ -3,26 +3,22 @@
 
     <item android:id="@+id/tracker"
         android:icon="@drawable/home"
-    android:title="Home Page"
-        android:onClick="openTrackerView">
+    android:title="Home Page">
     </item>
 
     <item android:id="@+id/news"
         android:icon="@drawable/tracker"
-        android:title="Tips n' News"
-        android:onClick="openNewsView">
+        android:title="Tips n' News">
     </item>
 
     <item android:id="@+id/setting"
         android:icon="@drawable/settings"
-        android:title="Settings"
-        android:onClick="openSettingsView">
+        android:title="Settings">
     </item>
 
     <item android:id="@+id/about"
         android:icon="@drawable/info"
-        android:title="About"
-        android:onClick="openInfoView">
+        android:title="About">
     </item>
 
 </menu>
