@@ -35,10 +35,21 @@ public class MainActivity extends AppCompatActivity {
 
                         int newitem = menuItem.getItemId();
 
-                        if (newitem == R.id.news) {
-                            Intent lol = new Intent(MainActivity.this, SettingsActivity.class);
-                            startActivity(lol);
+                        if (newitem == R.id.info) {
+                            Intent i = new Intent(MainActivity.this, InfoActivity.class);
+                            startActivity(i);
                         }
+
+                        if (newitem == R.id.settings) {
+                            Intent s = new Intent(MainActivity.this, SettingsActivity.class);
+                            startActivity(s);
+                        }
+
+                        if (newitem == R.id.news) {
+                            Intent n = new Intent(MainActivity.this, NewsActivity.class);
+                            startActivity(n);
+                        }
+
 
                         // Add code here to update the UI based on the item selected
                         // For example, swap UI fragments here
