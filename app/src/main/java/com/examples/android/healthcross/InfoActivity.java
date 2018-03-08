@@ -1,5 +1,6 @@
 package com.examples.android.healthcross;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -32,7 +33,22 @@ public class InfoActivity extends AppCompatActivity {
                         // close drawer when item is tapped
                         mDrawerLayout.closeDrawers();
 
+                        int newitem = menuItem.getItemId();
 
+                        if (newitem == R.id.settings) {
+                            Intent setting = new Intent(InfoActivity.this, SettingsActivity.class);
+                            startActivity(setting);
+                        }
+
+                        if (newitem == R.id.home) {
+                            Intent home = new Intent(InfoActivity.this, MainActivity.class);
+                            startActivity(home);
+                        }
+
+                        if (newitem == R.id.news) {
+                            Intent news = new Intent(InfoActivity.this, NewsActivity.class);
+                            startActivity(news);
+                        }
                         // Add code here to update the UI based on the item selected
                         // For example, swap UI fragments here
 

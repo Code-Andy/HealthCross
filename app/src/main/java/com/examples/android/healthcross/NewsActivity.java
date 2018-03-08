@@ -36,19 +36,19 @@ public class NewsActivity extends AppCompatActivity {
 
                         int newitem = menuItem.getItemId();
 
-                        if (newitem == R.id.info) {
-                            Intent i = new Intent(NewsActivity.this, InfoActivity.class);
-                            startActivity(i);
+                        if (newitem == R.id.about) {
+                            Intent info = new Intent(NewsActivity.this, InfoActivity.class);
+                            startActivity(info);
                         }
 
                         if (newitem == R.id.settings) {
-                            Intent s = new Intent(NewsActivity.this, SettingsActivity.class);
-                            startActivity(s);
+                            Intent setting = new Intent(NewsActivity.this, SettingsActivity.class);
+                            startActivity(setting);
                         }
 
                         if (newitem == R.id.home) {
-                            Intent m = new Intent(NewsActivity.this, MainActivity.class);
-                            startActivity(m);
+                            Intent home = new Intent(NewsActivity.this, MainActivity.class);
+                            startActivity(home);
                         }
 
                         // Add code here to update the UI based on the item selected

@@ -35,19 +35,19 @@ public class SettingsActivity extends AppCompatActivity {
 
                         int newitem = menuItem.getItemId();
 
-                        if (newitem == R.id.info) {
-                            Intent i = new Intent(SettingsActivity.this, InfoActivity.class);
-                            startActivity(i);
+                        if (newitem == R.id.about) {
+                            Intent info = new Intent(SettingsActivity.this, InfoActivity.class);
+                            startActivity(info);
                         }
 
-                        if (newitem == R.id.settings) {
-                            Intent m = new Intent(SettingsActivity.this, MainActivity.class);
-                            startActivity(m);
+                        if (newitem == R.id.home) {
+                            Intent home = new Intent(SettingsActivity.this, MainActivity.class);
+                            startActivity(home);
                         }
 
                         if (newitem == R.id.news) {
-                            Intent n = new Intent(SettingsActivity.this, NewsActivity.class);
-                            startActivity(n);
+                            Intent news = new Intent(SettingsActivity.this, NewsActivity.class);
+                            startActivity(news);
                         }
 
 

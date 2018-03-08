@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -35,19 +36,19 @@ public class MainActivity extends AppCompatActivity {
 
                         int newitem = menuItem.getItemId();
 
-                        if (newitem == R.id.info) {
-                            Intent i = new Intent(MainActivity.this, InfoActivity.class);
-                            startActivity(i);
+                        if (newitem == R.id.about) {
+                            Intent info = new Intent(MainActivity.this, InfoActivity.class);
+                            startActivity(info);
                         }
 
                         if (newitem == R.id.settings) {
-                            Intent s = new Intent(MainActivity.this, SettingsActivity.class);
-                            startActivity(s);
+                            Intent setting = new Intent(MainActivity.this, SettingsActivity.class);
+                            startActivity(setting);
                         }
 
                         if (newitem == R.id.news) {
-                            Intent n = new Intent(MainActivity.this, NewsActivity.class);
-                            startActivity(n);
+                            Intent news = new Intent(MainActivity.this, NewsActivity.class);
+                            startActivity(news);
                         }
 
 
