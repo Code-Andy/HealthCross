@@ -77,7 +77,7 @@ public class SettingsActivity extends AppCompatActivity {
             return true;
         }
 
-        if (id == R.id.Emergency) {
+        if (id == R.id.emergency) {
 
         }
 
