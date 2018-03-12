@@ -13,7 +13,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/image4"
         android:label="HealthCross"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -37,7 +37,11 @@
         <activity
             android:name=".InfoActivity"
             android:screenOrientation="portrait" />
-
+        <activity android:name=".Fractures" />
+        <activity android:name=".Burns" />
+        <activity android:name=".Scrapes" />
+        <activity android:name=".Punctures" />
+        <activity android:name=".Splinters"></activity>
     </application>
 
 </manifest>

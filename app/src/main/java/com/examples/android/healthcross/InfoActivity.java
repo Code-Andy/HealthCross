@@ -1,5 +1,6 @@
 package com.examples.android.healthcross;
 
+import android.net.Uri;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -76,9 +77,10 @@ public class InfoActivity extends AppCompatActivity {
         }
 
         if (id == R.id.emergency) {
-
+            Intent call = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "911"));
+            startActivity(call);
         }
-
         return super.onOptionsItemSelected(item);
     }
+
 }

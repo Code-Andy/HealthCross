@@ -1,5 +1,6 @@
 package com.examples.android.healthcross;
 
+import android.view.View;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -15,7 +16,9 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
 
+
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
@@ -71,6 +74,31 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.mymenu, menu);
         return super.onCreateOptionsMenu(menu);
+    }
+
+    public void openFracturesActivity(View view){
+        Intent fractures = new Intent(this, Fractures.class);
+        startActivity(fractures);
+    }
+
+    public void openBurnsActivity(View view){
+        Intent burns = new Intent(this, Burns.class);
+        startActivity(burns);
+    }
+
+    public void openScrapesActivity(View view){
+        Intent scrapes = new Intent(this, Scrapes.class);
+        startActivity(scrapes);
+    }
+
+    public void openPuncturesActivity(View view){
+        Intent punctures = new Intent(this, Punctures.class);
+        startActivity(punctures);
+    }
+
+    public void openSplintersActivity(View view){
+        Intent splinters = new Intent(this, Splinters.class);
+        startActivity(splinters);
     }
 
 

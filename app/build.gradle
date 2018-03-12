@@ -26,7 +26,6 @@ dependencies {
     })
     //add library
 
-
     //compile 'com.gtihub.d-max:sports-dialog:0.7@aar'
 
     //kjcompile 'com.google.code.gson.gson:2.8.2'
