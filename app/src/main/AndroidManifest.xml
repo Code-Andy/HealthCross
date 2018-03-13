@@ -13,9 +13,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/image4"
+        android:icon="@mipmap/healthcrosslogo2"
         android:label="HealthCross"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/healthcrosslogo2"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
@@ -41,7 +41,8 @@
         <activity android:name=".Burns" />
         <activity android:name=".Scrapes" />
         <activity android:name=".Punctures" />
-        <activity android:name=".Splinters"></activity>
+        <activity android:name=".Splinters" />
+        <activity android:name=".CPR"></activity>
     </application>
 
 </manifest>

@@ -122,5 +122,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(splinters);
     }
 
+    public void openCPRActivity(View view) {
+        Intent cpr = new Intent(MainActivity.this, CPR.class);
+        startActivity(cpr);
+    }
+
 }
 

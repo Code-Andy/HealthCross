@@ -3,7 +3,7 @@
     android:opacity="opaque">
     <item android:drawable="@color/colorWhite"/>
     <item>
-        <bitmap android:src="@drawable/healthcrosslogo" />
+        <bitmap android:src="@mipmap/healthcrosslogo" />
 
     </item>
 </layer-list>

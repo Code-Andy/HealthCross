@@ -2,15 +2,16 @@ package com.examples.android.healthcross;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
-public class Scrapes extends AppCompatActivity {
+public class CPR extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
@@ -21,7 +22,7 @@ public class Scrapes extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scrapes);
+        setContentView(R.layout.activity_cpr);
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.Drawer_Layout);
         mToggle =  new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open,R.string.close);
@@ -40,22 +41,22 @@ public class Scrapes extends AppCompatActivity {
                         int newitem = menuItem.getItemId();
 
                         if (newitem == R.id.about) {
-                            Intent info = new Intent(Scrapes.this, InfoActivity.class);
+                            Intent info = new Intent(CPR.this, InfoActivity.class);
                             startActivity(info);
                         }
 
                         if (newitem == R.id.settings) {
-                            Intent setting = new Intent(Scrapes.this, SettingsActivity.class);
+                            Intent setting = new Intent(CPR.this, SettingsActivity.class);
                             startActivity(setting);
                         }
 
                         if (newitem == R.id.home) {
-                            Intent home = new Intent(Scrapes.this, MainActivity.class);
+                            Intent home = new Intent(CPR.this, MainActivity.class);
                             startActivity(home);
                         }
 
                         if (newitem == R.id.news) {
-                            Intent news = new Intent(Scrapes.this, NewsActivity.class);
+                            Intent news = new Intent(CPR.this, NewsActivity.class);
                             startActivity(news);
                         }
 

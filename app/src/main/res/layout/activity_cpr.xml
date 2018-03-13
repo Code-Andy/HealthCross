@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.examples.android.healthcross.Punctures">
+    tools:context="com.examples.android.healthcross.CPR">
 
     <android.support.v4.widget.DrawerLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -15,23 +15,21 @@
         android:layout_alignParentStart="true">
 
         <LinearLayout
-            android:orientation="vertical"
-            android:background="@color/colorWhite"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-
 
             <TextView
                 android:layout_gravity="center_horizontal"
                 android:textSize="20sp"
-                android:text="-Wash your hands with soap or antibacterial cleanser to prevent infection.\n- Rinse the puncture for 5 minutes under running water. Then wash with soap.\n- Look (but do not poke around) for objects inside the wound. If found, don't remove it. Go to your emergency or urgent care center.\n- If you can't see anything inside the wound, but a piece of the object that caused the injury is missing, also seek medical attention.\n- Apply antibacterial ointment and a clean bandage that will not stick to the wound."
+                android:text=" 1. Place the heel of your hand on the breastbone at the centre of the person’s chest.\n 2.Place your other hand on top of your first hand and interlock your fingers.\n 3.Position yourself with your shoulders above your hands.\n 4.Using your body weight (not just your arms), press straight down by 6cm on their chest.\n 5.Keeping your hands on their chest, release the compression and allow the chest to return to its original position."
                 android:layout_marginTop="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#c60000"/>
 
-        </LinearLayout>
 
+
+        </LinearLayout>
 
         <android.support.design.widget.NavigationView
             android:layout_width="wrap_content"
@@ -42,4 +40,5 @@
 
     </android.support.v4.widget.DrawerLayout>
 
-</android.widget.RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
