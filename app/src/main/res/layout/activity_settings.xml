@@ -14,10 +14,53 @@
         android:layout_alignParentStart="true">
 
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="asdsdasdasdasdads"/>
+            android:orientation="vertical"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/red_border_top"
+                android:layout_height="wrap_content"
+                android:text="Change Background"
+                android:textSize="35sp"
+                android:textColor="#c60000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/red_border_top"
+                android:layout_height="wrap_content"
+                android:text="Change Language"
+                android:textSize="35sp"
+                android:textColor="#c60000"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/red_border_top"
+                android:layout_height="wrap_content"
+                android:text="Emergency Dial to *_*"
+                android:textSize="35sp"
+                android:textColor="#c60000"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/red_border_top"
+                android:layout_height="wrap_content"
+                android:text="Buy Premium Mode"
+                android:textSize="35sp"
+                android:textColor="#c60000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/red_border_top"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
 
         <android.support.design.widget.NavigationView
             android:layout_width="wrap_content"
