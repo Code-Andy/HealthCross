@@ -1,6 +1,5 @@
 package com.examples.android.healthcross;
 
-import android.view.View;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -10,6 +9,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -67,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
     }
 
 
@@ -76,30 +78,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-    public void openFracturesActivity(View view){
-        Intent fractures = new Intent(this, Fractures.class);
-        startActivity(fractures);
-    }
 
-    public void openBurnsActivity(View view){
-        Intent burns = new Intent(this, Burns.class);
-        startActivity(burns);
-    }
-
-    public void openScrapesActivity(View view){
-        Intent scrapes = new Intent(this, Scrapes.class);
-        startActivity(scrapes);
-    }
-
-    public void openPuncturesActivity(View view){
-        Intent punctures = new Intent(this, Punctures.class);
-        startActivity(punctures);
-    }
-
-    public void openSplintersActivity(View view){
-        Intent splinters = new Intent(this, Splinters.class);
-        startActivity(splinters);
-    }
 
 
     @Override
@@ -118,6 +97,30 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void openFracturesActivity(View view) {
+        Intent fractures = new Intent(MainActivity.this, Fractures.class);
+        startActivity(fractures);
+    }
+
+    public void openBurnsActivity(View view) {
+        Intent burns = new Intent(MainActivity.this, Burns.class);
+        startActivity(burns);
+    }
+
+    public void openScrapesActivity(View view) {
+        Intent scrapes = new Intent(MainActivity.this, Scrapes.class);
+        startActivity(scrapes);
+    }
+
+    public void openPuncturesActivity(View view) {
+        Intent punctures = new Intent(MainActivity.this, Punctures.class);
+        startActivity(punctures);
+    }
+
+    public void openSplintersActivity(View view) {
+        Intent splinters = new Intent(MainActivity.this, Splinters.class);
+        startActivity(splinters);
+    }
 
 }
 
