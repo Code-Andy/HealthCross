@@ -37,10 +37,15 @@
                 android:layout_height="wrap_content" />
 
                 <ImageView
-                android:layout_marginTop="5dp"
                 android:layout_width="fill_parent"
-                android:layout_height="490dp"
+                android:layout_height="470dp"
                 android:src="@drawable/health_art1"/>
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="490dp"
+                    android:src="@mipmap/health_art4"/>
 
 
                 <TextView
