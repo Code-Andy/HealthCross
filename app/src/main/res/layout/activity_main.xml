@@ -31,11 +31,20 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
+                    android:layout_height="80dp"
                     android:gravity="center"
                     android:text="Welcome"
-                    android:textSize="58dp"
+                    android:textSize="54sp"
                     android:textStyle="bold" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Please Click One of the Options Below"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:textColor="#000000"/>
 
                 <TextView
                     android:id="@+id/fracturetitle"
@@ -54,7 +63,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
                     android:onClick="openFracturesActivity"
-                    android:text="- For broken arms, legs and other bones\n- How to treat the wound and hold it in place"
+                    android:text="• For broken arms, legs and other bones\n• How to treat the wound and hold it in place"
                     android:textSize="16sp"
                     android:textStyle="italic"
                     android:textColor="#000000"
@@ -80,7 +89,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
                     android:onClick="openBurnsActivity"
-                    android:text="- For fire burns, chemical burns\n- How to treat the wound, and disinfect it"
+                    android:text="• For fire burns, chemical burns\n• How to treat the wound, and disinfect it"
                     android:textSize="16sp"
                     android:textStyle="italic"
                     android:textColor="#000000"
@@ -102,7 +111,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
                     android:onClick="openScrapesActivity"
-                    android:text="- For a rub on a hard surface causing damage or pain\n- How to treat the wound, and disinfect it"
+                    android:text="• For a rub on a hard surface causing damage or pain\n• How to treat the wound, and disinfect it"
                     android:textSize="16sp"
                     android:textStyle="italic"
                     android:textColor="#000000"
@@ -126,7 +135,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
                     android:onClick="openPuncturesActivity"
-                    android:text="- For a pierced or penetrated part of the skin\n- How to treat the wound, and disinfect it"
+                    android:text="• For a pierced or penetrated part of the skin\n• How to treat the wound, and disinfect it"
                     android:textSize="16sp"
                     android:textStyle="italic"
                     android:textColor="#000000"
@@ -150,7 +159,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
                     android:onClick="openSplintersActivity"
-                    android:text="- A small, thin, sharp material penetrating the skin\n- How to treat the wound, and disinfect it"
+                    android:text="• A small, thin, sharp material penetrating the skin\n• How to treat the wound, and disinfect it"
                     android:textSize="16sp"
                     android:textStyle="italic"
                     android:textColor="#000000"
@@ -173,7 +182,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
                     android:onClick="openCPRActivity"
-                    android:text="- A medical procedure involving repeated compression of a patient's chest"
+                    android:text="• A medical procedure involving repeated compression of a patient's chest"
                     android:textSize="16sp"
                     android:textStyle="italic"
                     android:textColor="#000000"

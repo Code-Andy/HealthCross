@@ -21,7 +21,7 @@
             <TextView
                 android:layout_gravity="center_horizontal"
                 android:textSize="20sp"
-                android:text=" 1. Place the heel of your hand on the breastbone at the centre of the person’s chest.\n 2.Place your other hand on top of your first hand and interlock your fingers.\n 3.Position yourself with your shoulders above your hands.\n 4.Using your body weight (not just your arms), press straight down by 6cm on their chest.\n 5.Keeping your hands on their chest, release the compression and allow the chest to return to its original position."
+                android:text=" 1. Place the heel of your hand on the breastbone at the centre of the person’s chest.\n\n 2.Place your other hand on top of your first hand and interlock your fingers.\n\n 3.Position yourself with your shoulders above your hands.\n\n 4.Using your body weight (not just your arms), press straight down by 6cm on their chest.\n\n 5.Keeping your hands on their chest, release the compression and allow the chest to return to its original position."
                 android:layout_marginTop="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

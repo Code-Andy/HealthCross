@@ -21,7 +21,7 @@
             <TextView
                 android:layout_gravity="center_horizontal"
                 android:textSize="20sp"
-                android:text="-Stop any bleeding with cloth or clothing.\n- Immobilize the injured area using a splint, sling. etc.\n- Apply cold to the area for up to 10 minutes at a time.\n- Treat them for shock, get into a comfortable position\n- Get professional help: Call 911 or help them get to the emergency department for professional care"
+                android:text="• Stop any bleeding with cloth or clothing.\n\n• Immobilize the injured area using a splint, sling. etc.\n\n• Apply cold to the area for up to 10 minutes at a time.\n\n• Treat them for shock, get into a comfortable position\n\n• Get professional help: Call 911 or help them get to the emergency department for professional care"
                 android:layout_marginTop="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

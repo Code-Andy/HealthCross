@@ -25,7 +25,7 @@
                 android:background="@drawable/red_border_top"
                 android:layout_height="wrap_content"
                 android:text="Change Background"
-                android:textSize="35sp"
+                android:textSize="30sp"
                 android:textColor="#c60000"/>
 
             <TextView
@@ -33,7 +33,7 @@
                 android:background="@drawable/red_border_top"
                 android:layout_height="wrap_content"
                 android:text="Change Language"
-                android:textSize="35sp"
+                android:textSize="30sp"
                 android:textColor="#c60000"/>
 
 
@@ -42,7 +42,7 @@
                 android:background="@drawable/red_border_top"
                 android:layout_height="wrap_content"
                 android:text="Emergency Dial to *_*"
-                android:textSize="35sp"
+                android:textSize="30sp"
                 android:textColor="#c60000"/>
 
 
@@ -51,7 +51,7 @@
                 android:background="@drawable/red_border_top"
                 android:layout_height="wrap_content"
                 android:text="Buy Premium Mode"
-                android:textSize="35sp"
+                android:textSize="30sp"
                 android:textColor="#c60000"/>
 
             <TextView

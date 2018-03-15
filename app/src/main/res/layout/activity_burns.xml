@@ -32,7 +32,7 @@
             <TextView
                 android:layout_gravity="center_horizontal"
                 android:textSize="16dp"
-                android:text="-Soaking the wound in cool water for five minutes or longer\n- Applying cream to soothe the skin \n- Using an antibiotic ointment and loose gauze to protect the affected area"
+                android:text="• Soaking the wound in cool water for five minutes or longer\n• Applying cream to soothe the skin \n• Using an antibiotic ointment and loose gauze to protect the affected area"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#c60000"/>
@@ -60,7 +60,7 @@
             <TextView
                 android:layout_gravity="center_horizontal"
                 android:textSize="16dp"
-                android:text="-Running the skin under cool water for 15 minutes or longer\n- Taking over-the-counter pain medication\n- Applying antibiotic cream to blisters"
+                android:text="• Running the skin under cool water for 15 minutes or longer\n• Taking over-the-counter pain medication\n• Applying antibiotic cream to blisters"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#c60000"/>
@@ -86,7 +86,7 @@
 
             <TextView
                 android:textSize="16dp"
-                android:text="-Never Attempt to treat a Third Degree burn\n- Press Emergency Button Immediately"
+                android:text="• Never Attempt to treat a Third Degree burn\n• Press Emergency Button Immediately"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

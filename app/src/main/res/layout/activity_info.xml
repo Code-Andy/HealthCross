@@ -69,13 +69,7 @@
                 android:text="Special Thanks to Mr. Clarke \n                 Andy Yang"
                 android:textSize="21sp"
                 android:textStyle="bold" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:text="Special Thanks to Andy Yang"
-                android:textSize="12sp"
-                android:layout_gravity="center"/>
+
 
 
             <TextView
@@ -91,7 +85,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:text="Date of Project Creation: Feb 21st 2018"
+                android:text="Project Created: 02/21/18"
                 android:textSize="20sp"
                 android:layout_gravity="center"/>
 
@@ -107,7 +101,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:text="This App Takes No Responsibility For Your Actions"
+                android:text="This App Takes No Responsibility\n                For Your Actions"
                 android:textSize="15sp"
                 android:layout_gravity="center"/>
 

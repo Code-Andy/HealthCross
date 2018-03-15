@@ -24,7 +24,7 @@
             <TextView
                 android:layout_gravity="center_horizontal"
                 android:textSize="20sp"
-                android:text="•Wash your hands with soap or antibacterial cleanser to prevent infection.\n• Rinse the puncture for 5 minutes under running water. Then wash with soap.\n• Look (but do not poke around) for objects inside the wound. If found, don't remove it. Go to your emergency or urgent care center.\n• If you can't see anything inside the wound, but a piece of the object that caused the injury is missing, also seek medical attention.\n• Apply antibacterial ointment and a clean bandage that will not stick to the wound."
+                android:text="•Wash your hands with soap or antibacterial cleanser to prevent infection.\n\n• Rinse the puncture for 5 minutes under running water. Then wash with soap.\n\n• Look (but do not poke around) for objects inside the wound. If found, don't remove it. Go to your emergency or urgent care center.\n\n• If you can't see anything inside the wound, but a piece of the object that caused the injury is missing, also seek medical attention.\n\n• Apply antibacterial ointment and a clean bandage that will not stick to the wound."
                 android:layout_marginTop="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -42,7 +42,7 @@
         <activity android:name=".Scrapes" />
         <activity android:name=".Punctures" />
         <activity android:name=".Splinters" />
-        <activity android:name=".CPR"></activity>
+        <activity android:name=".CPR" />
     </application>
 
 </manifest>
