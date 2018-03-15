@@ -13,9 +13,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/healthcrosslogo2"
+        android:icon="@mipmap/healthcrosslogo"
         android:label="HealthCross"
-        android:roundIcon="@mipmap/healthcrosslogo2"
+        android:roundIcon="@mipmap/healthcrosslogo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
