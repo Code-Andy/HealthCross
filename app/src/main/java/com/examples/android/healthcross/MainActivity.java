@@ -40,6 +40,11 @@ public class MainActivity extends AppCompatActivity {
 
                         int newitem = menuItem.getItemId();
 
+                        if (newitem == R.id.tracker) {
+                            Intent track = new Intent(MainActivity.this, Tracker.class);
+                            startActivity(track);
+                        }
+
                         if (newitem == R.id.about) {
                             Intent info = new Intent(MainActivity.this, InfoActivity.class);
                             startActivity(info);
@@ -96,6 +101,12 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+
+
+    public void openCutActivity(View view) {
+        Intent cut = new Intent(MainActivity.this, Cut.class);
+        startActivity(cut);
+    }
 
     public void openFracturesActivity(View view) {
         Intent fractures = new Intent(MainActivity.this, Fractures.class);

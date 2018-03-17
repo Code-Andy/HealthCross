@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class Scrapes extends AppCompatActivity {
+public class Cut extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
@@ -21,7 +21,7 @@ public class Scrapes extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scrapes);
+        setContentView(R.layout.activity_cut);
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.Drawer_Layout);
         mToggle =  new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open,R.string.close);
@@ -40,27 +40,27 @@ public class Scrapes extends AppCompatActivity {
                         int newitem = menuItem.getItemId();
 
                         if (newitem == R.id.tracker) {
-                            Intent track = new Intent(Scrapes.this, Tracker.class);
+                            Intent track = new Intent(Cut.this, Tracker.class);
                             startActivity(track);
                         }
 
                         if (newitem == R.id.about) {
-                            Intent info = new Intent(Scrapes.this, InfoActivity.class);
+                            Intent info = new Intent(Cut.this, InfoActivity.class);
                             startActivity(info);
                         }
 
                         if (newitem == R.id.settings) {
-                            Intent setting = new Intent(Scrapes.this, SettingsActivity.class);
+                            Intent setting = new Intent(Cut.this, SettingsActivity.class);
                             startActivity(setting);
                         }
 
                         if (newitem == R.id.home) {
-                            Intent home = new Intent(Scrapes.this, MainActivity.class);
+                            Intent home = new Intent(Cut.this, MainActivity.class);
                             startActivity(home);
                         }
 
                         if (newitem == R.id.news) {
-                            Intent news = new Intent(Scrapes.this, NewsActivity.class);
+                            Intent news = new Intent(Cut.this, NewsActivity.class);
                             startActivity(news);
                         }
 
@@ -108,3 +108,4 @@ public class Scrapes extends AppCompatActivity {
 
 
 }
+

@@ -25,8 +25,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@android:color/white">
+                android:orientation="vertical">
 
 
                 <TextView
@@ -90,6 +89,28 @@
                     android:layout_marginTop="3dp"
                     android:onClick="openBurnsActivity"
                     android:text="• For fire burns, chemical burns\n• How to treat the wound, and disinfect it"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/cutstitle"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/red_border_top"
+                    android:layout_height="wrap_content"
+                    android:onClick="openCutActivity"
+                    android:text=" Cuts"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:textColor="#c60000"/>
+                <TextView
+                    android:id="@+id/cutsdescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:onClick="openCutActivity"
+                    android:text="• For a slashed wound caused by a sharp fragment\n• Deeper wound then a scratch"
                     android:textSize="16sp"
                     android:textStyle="italic"
                     android:textColor="#000000"

@@ -35,6 +35,10 @@ public class SettingsActivity extends AppCompatActivity {
                         mDrawerLayout.closeDrawers();
 
                         int newitem = menuItem.getItemId();
+                        if (newitem == R.id.tracker) {
+                            Intent track = new Intent(SettingsActivity.this, Tracker.class);
+                            startActivity(track);
+                        }
 
                         if (newitem == R.id.about) {
                             Intent info = new Intent(SettingsActivity.this, InfoActivity.class);

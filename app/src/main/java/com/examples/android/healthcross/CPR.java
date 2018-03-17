@@ -40,6 +40,11 @@ public class CPR extends AppCompatActivity {
 
                         int newitem = menuItem.getItemId();
 
+                        if (newitem == R.id.tracker) {
+                            Intent track = new Intent(CPR.this, Tracker.class);
+                            startActivity(track);
+                        }
+
                         if (newitem == R.id.about) {
                             Intent info = new Intent(CPR.this, InfoActivity.class);
                             startActivity(info);

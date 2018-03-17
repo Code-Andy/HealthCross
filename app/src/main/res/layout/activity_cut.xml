@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.examples.android.healthcross.Cut">
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Drawer_Layout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:text=" • Wash your hands with soap or antibacterial cleanser to prevent infection\n\n• Then, wash the cut thoroughly with mild soap and water \n\n• Use direct pressure to stop the bleeding.\n\n •Apply antibacterial ointment and a clean bandage that will not stick to the wound"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#c60000"/>
+
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:menu="@menu/navigation_menu"
+            android:layout_gravity="start"
+            android:id="@+id/navview"/>
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</RelativeLayout>

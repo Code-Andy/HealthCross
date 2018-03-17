@@ -36,6 +36,11 @@ public class InfoActivity extends AppCompatActivity {
 
                         int newitem = menuItem.getItemId();
 
+                        if (newitem == R.id.tracker) {
+                            Intent track = new Intent(InfoActivity.this, Tracker.class);
+                            startActivity(track);
+                        }
+
                         if (newitem == R.id.settings) {
                             Intent setting = new Intent(InfoActivity.this, SettingsActivity.class);
                             startActivity(setting);

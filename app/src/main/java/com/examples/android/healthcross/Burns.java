@@ -39,6 +39,11 @@ public class Burns extends AppCompatActivity {
 
                         int newitem = menuItem.getItemId();
 
+                        if (newitem == R.id.tracker) {
+                            Intent track = new Intent(Burns.this, Tracker.class);
+                            startActivity(track);
+                        }
+
                         if (newitem == R.id.about) {
                             Intent info = new Intent(Burns.this, InfoActivity.class);
                             startActivity(info);

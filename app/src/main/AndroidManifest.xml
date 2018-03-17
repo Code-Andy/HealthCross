@@ -28,6 +28,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".Tracker"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".NewsActivity"
             android:screenOrientation="portrait" />
@@ -37,12 +40,22 @@
         <activity
             android:name=".InfoActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".Fractures" />
-        <activity android:name=".Burns" />
-        <activity android:name=".Scrapes" />
-        <activity android:name=".Punctures" />
-        <activity android:name=".Splinters" />
-        <activity android:name=".CPR" />
+        <activity android:name=".Fractures"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Burns"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Scrapes"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Punctures"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Splinters"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CPR"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Cut"
+            android:screenOrientation="portrait">
+
+        </activity>
     </application>
 
 </manifest>
