@@ -3,7 +3,6 @@ package com.examples.android.healthcross;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -19,13 +18,14 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class  Tracker extends AppCompatActivity implements SensorEventListener {
+public class Tracker extends AppCompatActivity implements SensorEventListener {
+
+
+    TextView tv_steps;
+
     SensorManager sensorManager;
-    public TextView tv_steps;
+
     boolean running = false;
-    SharedPreferences prefs = null;
-    SharedPreferences.Editor editor;
-    int steps;
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
 
@@ -34,6 +34,15 @@ public class  Tracker extends AppCompatActivity implements SensorEventListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tracker);
+
+        tv_steps = (TextView) findViewById(R.id.tv_steps);
+
+        sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.Drawer_Layout);
+        mToggle =  new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open,R.string.close);
+        mDrawerLayout.addDrawerListener(mToggle);
+        mToggle.syncState();
 
         NavigationView navigationView = (NavigationView)findViewById(R.id.navview);
         navigationView.setNavigationItemSelectedListener(
@@ -125,16 +134,6 @@ public class  Tracker extends AppCompatActivity implements SensorEventListener {
         if(running){
             tv_steps.setText(String.valueOf(event.values[0]));
         }
-
-    }
-
-
-    private void resetStepCount() {
-        //   reset every 24 hours.
-        editor.clear();
-        steps = 0;
-        editor.putInt("steps", steps);
-        editor.commit();
 
     }
 
