@@ -6,7 +6,7 @@
     android:title="Home Page">
     </item>
 
-    <item android:id="@+id/tracker"
+    <item android:id="@+id/trackers"
         android:icon="@drawable/health"
         android:title="Health Tracker">
     </item>
