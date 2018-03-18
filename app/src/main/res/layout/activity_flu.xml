@@ -21,22 +21,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" Ways you can treat the flu"
+                android:text=" How to avoid or treat the flu"
                 android:textColor="#000000"
                 android:textSize="25sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:textSize="20sp"
-                android:text=" 	• Stay away from others and stay at home
- 	• Sleep as much as you need
- 	• Refrain from high-impact exercise
- 	• Wash your hands frequently (20 secs)
- 	• Keep yourself hydrated and eat healthy
- 	• Constantly blow your nose of mucus
- 	• Take a hot shower or bath
- 	• Do a face steam
-"
+                android:textSize="19sp"
+                android:text=" • Stay away from others and stay at home\n • Sleep as much as you need\n • Refrain from high-impact exercise\n • Wash your hands frequently (20 secs)\n • Keep yourself hydrated and eat healthy\n • Constantly blow your nose of mucus\n • Take a hot shower or bath\n • Do a face steam"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#c60000" />

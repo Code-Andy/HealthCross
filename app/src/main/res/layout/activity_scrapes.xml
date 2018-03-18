@@ -24,7 +24,7 @@
             <TextView
                 android:layout_gravity="center_horizontal"
                 android:textSize="20sp"
-                android:text="• Stop bleeding by pressing a clean, soft cloth against the wound for a few minutes\n\n• Clean the wound\n\n• If you want, put a light layer of an antibiotic ointment around the injury to kill germs\n\n• Dry the area lightly and cover it with gauze or other type of bandage.\n\n• To prevent infection and reduce scarring, don't pick at the scab or skin around the wound."
+                android:text=" 1. Stop bleeding by pressing a clean, soft cloth against the wound for a few minutes\n\n 2. Clean the wound\n\n 3. If you want, put a light layer of an antibiotic ointment around the injury to kill germs\n\n 4. Dry the area lightly and cover it with gauze or other type of bandage.\n\n 5. To prevent infection and reduce scarring, don't pick at the scab or skin around the wound."
                 android:layout_marginTop="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

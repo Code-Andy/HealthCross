@@ -24,7 +24,7 @@
             <TextView
                 android:layout_gravity="center_horizontal"
                 android:textSize="20sp"
-                android:text="• Clean the wound with soap and water\n\n• Remove large splinters with tweezers\n\n• If the small splinters hurt use sticky tape to pull out\n\n• If it doesn’t hurt let let it take its course"
+                android:text=" 1. Clean the wound with soap and water\n\n 2. Remove large splinters with tweezers\n\n 3. If the small splinters hurt use sticky tape to pull out\n\n 4. If it doesn’t hurt let let it take its course"
                 android:layout_marginTop="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
