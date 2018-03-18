@@ -21,7 +21,7 @@
             <TextView
                 android:layout_gravity="center_horizontal"
                 android:textSize="20sp"
-                android:text=" • Wash your hands with soap or antibacterial cleanser to prevent infection\n\n• Then, wash the cut thoroughly with mild soap and water \n\n• Use direct pressure to stop the bleeding.\n\n •Apply antibacterial ointment and a clean bandage that will not stick to the wound"
+                android:text=" 1. Wash your hands with soap or antibacterial cleanser to prevent infection\n\n 2. Then, wash the cut thoroughly with mild soap and water \n\n 3. Use direct pressure to stop the bleeding.\n\n 4. Apply antibacterial ointment and a clean bandage that will not stick to the wound"
                 android:layout_marginTop="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

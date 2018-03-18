@@ -9,9 +9,8 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class Flu extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
@@ -22,14 +21,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_flu);
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.Drawer_Layout);
-        mToggle =  new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open,R.string.close);
+        mToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open, R.string.close);
         mDrawerLayout.addDrawerListener(mToggle);
         mToggle.syncState();
 
-        NavigationView navigationView = (NavigationView)findViewById(R.id.navview);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.navview);
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -41,26 +40,29 @@ public class MainActivity extends AppCompatActivity {
                         int newitem = menuItem.getItemId();
 
                         if (newitem == R.id.tracker) {
-                            Intent track = new Intent(MainActivity.this, Tracker.class);
+                            Intent track = new Intent(Flu.this, Tracker.class);
                             startActivity(track);
                         }
 
                         if (newitem == R.id.about) {
-                            Intent info = new Intent(MainActivity.this, InfoActivity.class);
+                            Intent info = new Intent(Flu.this, InfoActivity.class);
                             startActivity(info);
                         }
 
                         if (newitem == R.id.settings) {
-                            Intent setting = new Intent(MainActivity.this, SettingsActivity.class);
+                            Intent setting = new Intent(Flu.this, SettingsActivity.class);
                             startActivity(setting);
                         }
 
-                        if (newitem == R.id.news) {
-                            Intent news = new Intent(MainActivity.this, NewsActivity.class);
-                            startActivity(news);
+                        if (newitem == R.id.home) {
+                            Intent home = new Intent(Flu.this, MainActivity.class);
+                            startActivity(home);
                         }
 
-
+                        if (newitem == R.id.news) {
+                            Intent news = new Intent(Flu.this, NewsActivity.class);
+                            startActivity(news);
+                        }
 
 
                         // Add code here to update the UI based on the item selected
@@ -84,13 +86,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
     @Override
-    public boolean onOptionsItemSelected(MenuItem item){
+    public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        if(mToggle.onOptionsItemSelected(item)){
+        if (mToggle.onOptionsItemSelected(item)) {
             return true;
         }
 
@@ -101,46 +101,5 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
-
-    public void openCutActivity(View view) {
-        Intent cut = new Intent(MainActivity.this, Cut.class);
-        startActivity(cut);
-    }
-
-    public void openFracturesActivity(View view) {
-        Intent fractures = new Intent(MainActivity.this, Fractures.class);
-        startActivity(fractures);
-    }
-
-    public void openBurnsActivity(View view) {
-        Intent burns = new Intent(MainActivity.this, Burns.class);
-        startActivity(burns);
-    }
-
-    public void openScrapesActivity(View view) {
-        Intent scrapes = new Intent(MainActivity.this, Scrapes.class);
-        startActivity(scrapes);
-    }
-
-    public void openPuncturesActivity(View view) {
-        Intent punctures = new Intent(MainActivity.this, Punctures.class);
-        startActivity(punctures);
-    }
-
-    public void openSplintersActivity(View view) {
-        Intent splinters = new Intent(MainActivity.this, Splinters.class);
-        startActivity(splinters);
-    }
-
-    public void openCPRActivity(View view) {
-        Intent cpr = new Intent(MainActivity.this, CPR.class);
-        startActivity(cpr);
-    }
-
-    public void openFluActivity(View view) {
-        Intent flu = new Intent(MainActivity.this, Flu.class);
-        startActivity(flu);
-    }
 
 }
