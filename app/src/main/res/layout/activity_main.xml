@@ -76,6 +76,7 @@
                     android:textSize="35sp"
                     android:textStyle="bold"
                     android:textColor="#c60000"/>
+
                 <TextView
                     android:id="@+id/burnsdescription"
                     android:layout_width="match_parent"
