@@ -6,11 +6,6 @@
     android:title="Home Page">
     </item>
 
-    <item android:id="@+id/tracker"
-        android:icon="@drawable/health"
-        android:title="Health Tracker">
-    </item>
-
     <item android:id="@+id/news"
         android:icon="@drawable/tracker"
         android:title="Tips n' News">
