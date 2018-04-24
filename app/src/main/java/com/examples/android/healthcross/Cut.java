@@ -39,11 +39,6 @@ public class Cut extends AppCompatActivity {
 
                         int newitem = menuItem.getItemId();
 
-                        if (newitem == R.id.tracker) {
-                            Intent track = new Intent(Cut.this, Tracker.class);
-                            startActivity(track);
-                        }
-
                         if (newitem == R.id.about) {
                             Intent info = new Intent(Cut.this, InfoActivity.class);
                             startActivity(info);

@@ -39,11 +39,6 @@ public class Splinters extends AppCompatActivity {
 
                         int newitem = menuItem.getItemId();
 
-                        if (newitem == R.id.tracker) {
-                            Intent track = new Intent(Splinters.this, Tracker.class);
-                            startActivity(track);
-                        }
-
                         if (newitem == R.id.about) {
                             Intent info = new Intent(Splinters.this, InfoActivity.class);
                             startActivity(info);

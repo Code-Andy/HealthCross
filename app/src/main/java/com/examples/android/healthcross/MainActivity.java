@@ -40,11 +40,6 @@ public class MainActivity extends AppCompatActivity {
 
                         int newitem = menuItem.getItemId();
 
-                        if (newitem == R.id.tracker) {
-                            Intent track = new Intent(MainActivity.this, Tracker.class);
-                            startActivity(track);
-                        }
-
                         if (newitem == R.id.about) {
                             Intent info = new Intent(MainActivity.this, InfoActivity.class);
                             startActivity(info);

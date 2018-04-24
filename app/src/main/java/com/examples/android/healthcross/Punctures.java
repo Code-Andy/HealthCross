@@ -39,11 +39,6 @@ public class Punctures extends AppCompatActivity {
 
                         int newitem = menuItem.getItemId();
 
-                        if (newitem == R.id.tracker) {
-                            Intent track = new Intent(Punctures.this, Tracker.class);
-                            startActivity(track);
-                        }
-
                         if (newitem == R.id.about) {
                             Intent info = new Intent(Punctures.this, InfoActivity.class);
                             startActivity(info);

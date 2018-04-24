@@ -40,11 +40,6 @@ public class Fractures extends AppCompatActivity {
 
                         int newitem = menuItem.getItemId();
 
-                        if (newitem == R.id.tracker) {
-                            Intent track = new Intent(Fractures.this, Tracker.class);
-                            startActivity(track);
-                        }
-
                         if (newitem == R.id.about) {
                             Intent info = new Intent(Fractures.this, InfoActivity.class);
                             startActivity(info);
