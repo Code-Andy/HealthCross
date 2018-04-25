@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/HealthCross.iml" filepath="$PROJECT_DIR$/.idea/HealthCross.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HealthCross.iml" filepath="$PROJECT_DIR$/HealthCross.iml" />
+      <module fileurl="file://C:\Users\Andy\AndroidStudiosProjects\HealthCross\.idea\HealthCross.iml" filepath="C:\Users\Andy\AndroidStudiosProjects\HealthCross\.idea\HealthCross.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
