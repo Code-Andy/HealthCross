@@ -15,12 +15,12 @@
         android:layout_alignParentStart="true">
 
         <ScrollView
+            android:background="@color/colorBackground"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fillViewport="true"
             android:scrollbars = "vertical"
-            android:scrollbarStyle="insideOverlay"
-            android:background="@color/colorBackground">
+            android:scrollbarStyle="insideOverlay">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -60,12 +60,6 @@
                             android:layout_height="wrap_content">
 
 
-                           <ImageView
-                               android:src="@drawable/fracture"
-                               android:layout_gravity="center_horizontal"
-                               android:layout_width="wrap_content"
-                               android:layout_height="wrap_content" />
-
                             <TextView
                                 android:text="Fractures"
                                 android:textAlignment="center"
@@ -103,12 +97,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
 
-                            <ImageView
-                                android:src="@drawable/fracture"
-                                android:layout_gravity="center_horizontal"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" />
-
                             <TextView
                                 android:text="Burns"
                                 android:textAlignment="center"
@@ -145,12 +133,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
 
-                            <ImageView
-                                android:src="@drawable/fracture"
-                                android:layout_gravity="center_horizontal"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" />
-
                             <TextView
                                 android:text="Cuts"
                                 android:textAlignment="center"
@@ -186,13 +168,7 @@
                             android:layout_margin="16dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
-
-                            <ImageView
-                                android:src="@drawable/fracture"
-                                android:layout_gravity="center_horizontal"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" />
-
+                            
                             <TextView
                                 android:text="Scrapes"
                                 android:textAlignment="center"
@@ -228,12 +204,6 @@
                             android:layout_margin="16dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
-
-                            <ImageView
-                                android:src="@drawable/fracture"
-                                android:layout_gravity="center_horizontal"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" />
 
                             <TextView
                                 android:text="Punctures"
@@ -271,12 +241,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
 
-                            <ImageView
-                                android:src="@drawable/fracture"
-                                android:layout_gravity="center_horizontal"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" />
-
                             <TextView
                                 android:text="Splinters"
                                 android:textAlignment="center"
@@ -313,12 +277,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
 
-                            <ImageView
-                                android:src="@drawable/fracture"
-                                android:layout_gravity="center_horizontal"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" />
-
                             <TextView
                                 android:text="Cpr"
                                 android:textAlignment="center"
@@ -354,12 +312,6 @@
                             android:layout_margin="16dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
-
-                            <ImageView
-                                android:src="@drawable/fracture"
-                                android:layout_gravity="center_horizontal"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" />
 
                             <TextView
                                 android:text="Flu"
