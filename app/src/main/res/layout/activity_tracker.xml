@@ -20,7 +20,7 @@
             android:scrollbarStyle="insideOverlay"
             android:background="@color/colorBackground">
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
@@ -77,7 +77,7 @@
 
                 </LinearLayout>
 
-            </LinearLayout>
+            </RelativeLayout>
 
         </ScrollView>
 
