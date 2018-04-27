@@ -20,64 +20,119 @@
             android:scrollbarStyle="insideOverlay"
             android:background="@color/colorBackground">
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
             <LinearLayout
-                android:layout_marginTop="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/tv_info"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="30dp"
-                    android:text="Steps"
-                    android:textColor="#c60000"
-                    android:textSize="30sp"/>
+                <GridLayout
+                    android:columnCount="1"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="5"
+                    android:alignmentMode="alignMargins"
+                    android:layout_weight="20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp">
 
-                <TextView
-                    android:id="@+id/tv_steps"
-                    android:layout_marginLeft="35dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textColor="#c60000"
-                    android:textSize="30sp" />
+                    <!-- Row 1 -->
+                    <android.support.v7.widget.CardView
+                        android:layout_height="140dp"
+                        android:layout_width="0dp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        app:cardElevation="6dp"
+                        app:cardCornerRadius="6dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#c60000"
-                    android:text="/5000"
-                    android:textSize="30sp" />
+                        <LinearLayout
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_margin="16dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_info"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="30dp"
+                                android:text="Steps"
+                                android:textColor="#c60000"
+                                android:textSize="30sp" />
+
+                            <TextView
+                                android:id="@+id/tv_steps"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="#c60000"
+                                android:textSize="30sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#c60000"
+                                android:text="/5000"
+                                android:textSize="30sp" />
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!-- Row 2 -->
+                    <android.support.v7.widget.CardView
+                        android:layout_height="110dp"
+                        android:layout_width="0dp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        app:cardElevation="6dp"
+                        app:cardCornerRadius="6dp">
+
+                        <LinearLayout
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_margin="16dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/calendaricon"
+                                android:layout_centerHorizontal="true"
+                                android:text="Calendar"
+                                android:onClick="openCalendar"
+                                android:textColor="@color/colorFont"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="30dp" />
+
+                            <TextView
+                                android:id="@+id/calendaricon"
+                                android:layout_centerHorizontal="true"
+                                android:text="IMAGE"
+                                android:onClick="openCalendar"
+                                android:textColor="@color/colorFont"
+                                android:textSize="30sp"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+                </GridLayout>
 
             </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-
-                    <TextView
-                        android:id="@+id/calendaricon"
-                        android:layout_centerHorizontal="true"
-                        android:text="Calendar"
-                        android:onClick="openCalendar"
-                        android:textColor="@color/colorFont"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-
-                </LinearLayout>
-
-            </RelativeLayout>
 
         </ScrollView>
 

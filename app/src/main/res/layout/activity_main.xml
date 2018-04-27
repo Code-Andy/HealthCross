@@ -351,8 +351,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="6dp"
                         app:cardElevation="8dp"
-                        app:cardCornerRadius="6dp"
-                        >
+                        app:cardCornerRadius="6dp">
 
                         <RelativeLayout
                             android:layout_gravity="center_horizontal|center_vertical"
@@ -383,13 +382,7 @@
 
                     </android.support.v7.widget.CardView>
 
-
-
-
                 </GridLayout>
-
-
-
 
             </LinearLayout>
 
