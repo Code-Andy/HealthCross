@@ -1,7 +1,6 @@
 package com.examples.android.healthcross;
 
 import android.annotation.SuppressLint;
-import android.content.ContentUris;
 import android.content.Context;
 import android.content.Intent;
 import android.hardware.Sensor;
@@ -9,17 +8,18 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.net.Uri;
-import android.provider.CalendarContract;
+import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.Calendar;
 
 public class Tracker extends AppCompatActivity implements SensorEventListener {
 
@@ -133,11 +133,14 @@ public class Tracker extends AppCompatActivity implements SensorEventListener {
     }
 
     public void openCalendar (View view) {
-        long startMillis = System.currentTimeMillis();
-        Uri.Builder builder = CalendarContract.CONTENT_URI.buildUpon();
-        builder.appendPath("time");
-        ContentUris.appendId(builder, startMillis);
-        Intent intent = new Intent(Intent.ACTION_VIEW).setData(builder.build());
+        Calendar cal = Calendar.getInstance();
+        Intent intent = new Intent(Intent.ACTION_EDIT);
+        intent.setType("vnd.android.cursor.item/event");
+        intent.putExtra("beginTime", cal.getTimeInMillis());
+        intent.putExtra("allDay", false);
+        intent.putExtra("rule", "FREQ=DAILY");
+        intent.putExtra("endTime", cal.getTimeInMillis()+60*60*500);
+        intent.putExtra("title", "Medication Name");
         startActivity(intent);
 
     }
