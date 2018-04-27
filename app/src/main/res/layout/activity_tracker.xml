@@ -93,20 +93,21 @@
                         android:layout_marginLeft="6dp"
                         android:layout_marginRight="6dp"
                         app:cardElevation="6dp"
-                        app:cardCornerRadius="6dp">
+                        app:cardCornerRadius="6dp"
+                        android:onClick="openCalendar">
 
                         <LinearLayout
                             android:layout_gravity="center_horizontal|center_vertical"
                             android:orientation="horizontal"
                             android:layout_margin="16dp"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:onClick="openCalendar">
 
                             <TextView
                                 android:id="@+id/calendaricon"
                                 android:layout_centerHorizontal="true"
                                 android:text="Calendar"
-                                android:onClick="openCalendar"
                                 android:textColor="@color/colorFont"
                                 android:textSize="18sp"
                                 android:textStyle="bold"
@@ -115,10 +116,8 @@
                                 android:layout_marginRight="30dp" />
 
                             <TextView
-                                android:id="@+id/calendaricon"
                                 android:layout_centerHorizontal="true"
                                 android:text="IMAGE"
-                                android:onClick="openCalendar"
                                 android:textColor="@color/colorFont"
                                 android:textSize="30sp"
                                 android:textStyle="bold"

@@ -142,6 +142,8 @@ public class Tracker extends AppCompatActivity implements SensorEventListener {
         intent.putExtra("endTime", cal.getTimeInMillis()+60*60*500);
         intent.putExtra("title", "Medication Name");
         startActivity(intent);
+        Toast.makeText(getApplicationContext(), "Loading medication calendar",
+                Toast.LENGTH_SHORT).show();
 
     }
 
