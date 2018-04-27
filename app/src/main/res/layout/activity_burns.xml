@@ -60,7 +60,7 @@
                         <TextView
                             android:text="1st Degree\n  • Soaking the wound in cool water for five minutes or longer\n • Applying cream to soothe the skin \n • Using an antibiotic ointment and loose gauze to protect the affected area"
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
@@ -95,7 +95,7 @@
                         <TextView
                             android:text="2nd Degree\n • Running the skin under cool water for 15 minutes or longer\n • Taking over-the-counter pain medication\n • Applying antibiotic cream to blisters"
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
@@ -129,7 +129,7 @@
                         <TextView
                             android:text="3rd Degree\n • Never Attempt to treat a Third Degree burn\n • Press Emergency Button Immediately"
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"

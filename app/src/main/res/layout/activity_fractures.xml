@@ -61,7 +61,7 @@
                         <TextView
                             android:text="1. Stop any bleeding with cloth or clothing."
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
@@ -96,7 +96,7 @@
                         <TextView
                             android:text="2. Immobilize the injured area using a splint."
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
@@ -130,7 +130,7 @@
                         <TextView
                             android:text="3. Apply cold to the area for up to 10 minutes at a time."
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
@@ -164,7 +164,7 @@
                         <TextView
                             android:text="4. Treat them for shock, get into a comfortable position."
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
@@ -198,7 +198,7 @@
                         <TextView
                             android:text="5.Call 911 or help them get to the emergency department for professional care"
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"

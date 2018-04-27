@@ -61,7 +61,7 @@
                         <TextView
                             android:text="1. Wash your hands with soap or antibacterial cleanser to prevent infection."
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
@@ -96,7 +96,7 @@
                         <TextView
                             android:text="2. Then, wash the cut thoroughly with mild soap and water."
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
@@ -130,7 +130,7 @@
                         <TextView
                             android:text="3. Use direct pressure to stop the bleeding."
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
@@ -164,7 +164,7 @@
                         <TextView
                             android:text="4. Apply antibacterial ointment and a clean bandage that will not stick to the wound."
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"

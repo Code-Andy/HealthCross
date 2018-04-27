@@ -41,6 +41,12 @@ public class InfoActivity extends AppCompatActivity {
                             startActivity(setting);
                         }
 
+                        if (newitem == R.id.tracker) {
+                            Intent tracker = new Intent(InfoActivity.this, Tracker.class);
+                            startActivity(tracker);
+                        }
+
+
                         if (newitem == R.id.home) {
                             Intent home = new Intent(InfoActivity.this, MainActivity.class);
                             startActivity(home);

@@ -61,7 +61,7 @@
                         <TextView
                             android:text="1. Place the heel of your hand on the breastbone at the centre of the person’s chest."
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
@@ -96,7 +96,7 @@
                         <TextView
                             android:text="2.Place your other hand on top of your first hand and interlock your fingers."
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
@@ -130,7 +130,7 @@
                         <TextView
                             android:text="3.Position yourself with your shoulders above your hands."
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
@@ -164,7 +164,7 @@
                         <TextView
                             android:text="4.Using your body weight (not just your arms), press straight down by 6cm on their chest."
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
@@ -198,7 +198,7 @@
                         <TextView
                             android:text="5.Keeping your hands on their chest, release the compression and allow the chest to return to its original position."
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"

@@ -42,6 +42,12 @@ public class NewsActivity extends AppCompatActivity {
                             startActivity(info);
                         }
 
+                        if (newitem == R.id.tracker) {
+                            Intent tracker = new Intent(NewsActivity.this, Tracker.class);
+                            startActivity(tracker);
+                        }
+
+
                         if (newitem == R.id.settings) {
                             Intent setting = new Intent(NewsActivity.this, SettingsActivity.class);
                             startActivity(setting);

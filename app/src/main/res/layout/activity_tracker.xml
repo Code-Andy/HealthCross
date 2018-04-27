@@ -18,14 +18,17 @@
             android:fillViewport="true"
             android:scrollbars = "vertical"
             android:scrollbarStyle="insideOverlay"
-            android:background="@android:color/white">
+            android:background="@color/colorBackground">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
             <LinearLayout
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:background="@android:color/white"
                 android:layout_gravity="center">
 
                 <TextView
@@ -53,8 +56,26 @@
                     android:text="/5000"
                     android:textSize="30sp" />
 
+            </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
 
 
+                    <TextView
+                        android:id="@+id/calendaricon"
+                        android:layout_centerHorizontal="true"
+                        android:text="Calendar"
+                        android:onClick="openCalendar"
+                        android:textColor="@color/colorFont"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
 
             </LinearLayout>
 

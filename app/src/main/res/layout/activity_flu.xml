@@ -60,7 +60,7 @@
                         <TextView
                             android:text="• Stay away from others and stay at home"
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
@@ -95,7 +95,7 @@
                         <TextView
                             android:text="• Refrain from high-impact exercise"
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
@@ -129,7 +129,7 @@
                         <TextView
                             android:text="• Wash your hands frequently (20 secs)"
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
@@ -163,7 +163,7 @@
                         <TextView
                             android:text="• Keep yourself hydrated and eat healthy"
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
@@ -197,7 +197,7 @@
                         <TextView
                             android:text="• Constantly blow your nose of mucus"
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"

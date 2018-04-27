@@ -9,6 +9,13 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import java.util.Locale;
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.util.DisplayMetrics;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -40,6 +47,13 @@ public class SettingsActivity extends AppCompatActivity {
                             Intent info = new Intent(SettingsActivity.this, InfoActivity.class);
                             startActivity(info);
                         }
+
+                        if (newitem == R.id.tracker) {
+                            Intent tracker = new Intent(SettingsActivity.this, Tracker.class);
+                            startActivity(tracker);
+                        }
+
+
 
                         if (newitem == R.id.home) {
                             Intent home = new Intent(SettingsActivity.this, MainActivity.class);

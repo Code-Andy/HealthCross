@@ -1,8 +1,10 @@
 package com.examples.android.healthcross;
 
+import android.content.ContentUris;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.CalendarContract;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -10,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.CalendarView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
                         if (newitem == R.id.about) {
                             Intent info = new Intent(MainActivity.this, InfoActivity.class);
                             startActivity(info);
+                        }
+
+                        if (newitem == R.id.tracker) {
+                            Intent tracker = new Intent(MainActivity.this, Tracker.class);
+                            startActivity(tracker);
                         }
 
                         if (newitem == R.id.settings) {
@@ -137,5 +145,6 @@ public class MainActivity extends AppCompatActivity {
         Intent flu = new Intent(MainActivity.this, Flu.class);
         startActivity(flu);
     }
+
 
 }

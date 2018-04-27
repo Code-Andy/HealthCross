@@ -61,7 +61,7 @@
                         <TextView
                             android:text="1. Wash your hands with soap or antibacterial cleanser to prevent infection."
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
@@ -96,7 +96,7 @@
                         <TextView
                             android:text="2. Rinse the puncture for 5 minutes under running water. Then wash with soap."
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
@@ -130,7 +130,7 @@
                         <TextView
                             android:text="3. Look, but do not poke around, for objects inside the wound. If found, don't remove it. Go to your emergency or urgent care center."
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
@@ -164,7 +164,7 @@
                         <TextView
                             android:text="4. If you can't see anything inside the wound, but a piece of the object that caused the injury is missing, also seek medical attention."
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
@@ -198,7 +198,7 @@
                         <TextView
                             android:text="5. Apply antibacterial ointment and a clean bandage that will not stick to the wound."
                             android:textAlignment="center"
-                            android:textColor="@color/colorPrimaryDark"
+                            android:textColor="@color/colorFont"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
