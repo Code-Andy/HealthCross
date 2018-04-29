@@ -14,6 +14,7 @@ import android.widget.ProgressBar;
 
 
 public class DetailsActivity extends AppCompatActivity {
+
     WebView webView;
     ProgressBar loader;
     String url = "";

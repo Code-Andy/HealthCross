@@ -43,6 +43,7 @@ public class Function {
             connection.setDoOutput(false);
 
 
+
             InputStream is;
 
             int status = connection.getResponseCode();
@@ -51,6 +52,7 @@ public class Function {
                 is = connection.getErrorStream();
             else
                 is = connection.getInputStream();
+
 
 
             BufferedReader rd = new BufferedReader(new InputStreamReader(is));
@@ -75,6 +77,5 @@ public class Function {
             }
         }
     }
-
-
 }
+
