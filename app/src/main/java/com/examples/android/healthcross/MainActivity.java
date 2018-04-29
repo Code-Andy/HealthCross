@@ -1,10 +1,8 @@
 package com.examples.android.healthcross;
 
-import android.content.ContentUris;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.CalendarContract;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -12,27 +10,42 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.CalendarView;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
+
 
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
 
 
+    ArrayList<HashMap<String, String>> dataList = new ArrayList<HashMap<String, String>>();
+    static final String KEY_AUTHOR = "author";
+    static final String KEY_TITLE = "title";
+    static final String KEY_DESCRIPTION = "description";
+    static final String KEY_URL = "url";
+    static final String KEY_URLTOIMAGE = "urlToImage";
+    static final String KEY_PUBLISHEDAT = "publishedAt";
+
+
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
+
+
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.Drawer_Layout);
+
+        mDrawerLayout = findViewById(R.id.Drawer_Layout);
         mToggle =  new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open,R.string.close);
         mDrawerLayout.addDrawerListener(mToggle);
         mToggle.syncState();
 
-        NavigationView navigationView = (NavigationView)findViewById(R.id.navview);
+        NavigationView navigationView = findViewById(R.id.navview);
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -148,3 +161,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 }
+
+
+
+
+
