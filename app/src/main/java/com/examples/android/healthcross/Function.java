@@ -13,9 +13,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-/**
- * Created by SHAJIB on 5/6/2017.
- */
 
 public class Function {
 
