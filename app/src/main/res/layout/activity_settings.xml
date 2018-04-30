@@ -21,34 +21,43 @@
             android:background="@color/colorBackground">
 
             <Button
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/colorWhite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Change Background"
                 android:textSize="24sp"
-                android:textColor="#c60000"/>
+                android:textColor="@color/colorFont"/>
 
             <Button
+                android:layout_marginBottom="16dp"
+                android:background="@color/colorWhite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Change Language"
                 android:textSize="24sp"
-                android:textColor="#c60000"/>
+                android:textColor="@color/colorFont"/>
 
 
             <Button
+                android:layout_marginBottom="16dp"
+                android:background="@color/colorWhite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Emergency Dial to *_*"
                 android:textSize="24sp"
-                android:textColor="#c60000"/>
+                android:textColor="@color/colorFont"/>
 
 
             <Button
+                android:layout_marginBottom="16dp"
+                android:background="@color/colorWhite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Donate to our KickStarter"
                 android:textSize="24sp"
-                android:textColor="#c60000"/>
+                android:textColor="@color/colorFont"/>
 
 
         </LinearLayout>

@@ -64,6 +64,21 @@
             android:name=".Cut"
             android:screenOrientation="portrait" />
         <activity android:name=".Flu" />
+
+        <service
+            android:name="com.examples.android.healthcross.SensorService"
+            android:enabled="true" >
+        </service>
+
+        <receiver
+            android:name="com.examples.android.healthcross.SensorRestarterBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped">
+            <intent-filter>
+                <action android:name="com.examples.android.healthcross.RestartSensor"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

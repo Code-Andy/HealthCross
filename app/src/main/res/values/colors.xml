@@ -2,8 +2,8 @@
 <resources>#ed1b2e
     <color name="colorPrimary">#ed1b2e</color>
     <color name="colorFont">#0a0463</color>
-    <color name="colorPrimaryDark">#d41121</color>
+    <color name="colorPrimaryDark">#CF2121</color>
     <color name="colorAccent">#0000FF</color>
-    <color name="colorBackground">#E0FFFF</color>
+    <color name="colorBackground">#F0FFFF</color>
     <color name="colorWhite">#FFFFFF</color>
 </resources>

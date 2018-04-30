@@ -30,16 +30,53 @@
             <GridLayout
                 android:columnCount="1"
                 android:columnOrderPreserved="false"
-                android:rowCount="5"
+                android:rowCount="11"
                 android:alignmentMode="alignMargins"
-                android:layout_weight="7"
+                android:layout_weight="10"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:padding="12dp">
 
+
+                <android.support.v7.widget.CardView
+                    android:layout_height="80dp"
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="6dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical"
+                        android:layout_margin="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Procedure"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
                 <!-- Row 1 -->
                 <android.support.v7.widget.CardView
-                    android:layout_height="0dp"
+                    android:layout_height="110dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
@@ -75,7 +112,7 @@
 
                 <!-- Row 2 -->
                 <android.support.v7.widget.CardView
-                    android:layout_height="0dp"
+                    android:layout_height="110dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
@@ -109,7 +146,7 @@
 
                 <!-- Row 3 -->
                 <android.support.v7.widget.CardView
-                    android:layout_height="0dp"
+                    android:layout_height="110dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
@@ -143,7 +180,7 @@
 
                 <!-- Row 4 -->
                 <android.support.v7.widget.CardView
-                    android:layout_height="0dp"
+                    android:layout_height="110dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
@@ -177,7 +214,7 @@
 
                 <!-- Row 5 -->
                 <android.support.v7.widget.CardView
-                    android:layout_height="45dp"
+                    android:layout_height="140dp"
                     android:layout_width="0dp"
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
@@ -196,7 +233,7 @@
                         android:layout_height="wrap_content">
 
                         <TextView
-                            android:text="5.Call 911 or help them get to the emergency department for professional care"
+                            android:text="5.Call 911 or help them get to the emergency department for professional care."
                             android:textAlignment="center"
                             android:textColor="@color/colorFont"
                             android:textSize="18sp"
@@ -208,6 +245,186 @@
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_height="80dp"
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="6dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical"
+                        android:layout_margin="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Symptoms"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_height="90dp"
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="6dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical"
+                        android:layout_margin="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Swelling/Bruising over a bone"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorFont"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_height="100dp"
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="6dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical"
+                        android:layout_margin="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Deformity the bone or body part"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorFont"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_height="90dp"
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="6dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical"
+                        android:layout_margin="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Pain in the area when moved"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorFont"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_height="90dp"
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="6dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical"
+                        android:layout_margin="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Loss of function in the area"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorFont"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+
 
 
             </GridLayout>

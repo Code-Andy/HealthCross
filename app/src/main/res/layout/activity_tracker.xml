@@ -59,23 +59,23 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginRight="30dp"
                                 android:text="Steps"
-                                android:textColor="#c60000"
-                                android:textSize="30sp" />
+                                android:textColor="@color/colorFont"
+                                android:textSize="25sp" />
 
                             <TextView
                                 android:id="@+id/tv_steps"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="0"
-                                android:textColor="#c60000"
-                                android:textSize="30sp" />
+                                android:textColor="@color/colorFont"
+                                android:textSize="25sp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textColor="#c60000"
+                                android:textColor="@color/colorFont"
                                 android:text="/5000"
-                                android:textSize="30sp" />
+                                android:textSize="25sp" />
 
 
                         </LinearLayout>
@@ -99,26 +99,23 @@
                             android:orientation="horizontal"
                             android:layout_margin="16dp"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:onClick="openCalendar">
+                            android:layout_height="wrap_content">
 
                             <TextView
                                 android:id="@+id/calendaricon"
                                 android:layout_centerHorizontal="true"
-                                android:text="Calendar"
+                                android:text="Open"
                                 android:textColor="@color/colorFont"
-                                android:textSize="18sp"
-                                android:textStyle="bold"
+                                android:textSize="25sp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginRight="30dp" />
 
                             <TextView
                                 android:layout_centerHorizontal="true"
-                                android:text="IMAGE"
+                                android:text="Med Calendar"
                                 android:textColor="@color/colorFont"
-                                android:textSize="30sp"
-                                android:textStyle="bold"
+                                android:textSize="25sp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content" />
 
