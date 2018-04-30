@@ -64,9 +64,6 @@
             android:name=".Cut"
             android:screenOrientation="portrait" />
         <activity android:name=".Flu" />
-        <activity
-            android:name=".CalendarActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

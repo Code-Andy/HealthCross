@@ -13,7 +13,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-
 public class Function {
 
     public static boolean isNetworkAvailable(Context context) {

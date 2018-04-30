@@ -29,7 +29,7 @@ public class NewsActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
 
-    String API_KEY = "8190df9eb51445228e397e4185311a66"; // ### YOUE NEWS API HERE ###
+    String API_KEY = "f5a06233721f46d180a5b2f8c21aab8b"; // ### YOUE NEWS API HERE ###
     String NEWS_SOURCE = "bbc-news";
     ListView listNews;
     ProgressBar loader;

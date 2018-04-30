@@ -12,13 +12,10 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.widget.ProgressBar;
 
-
 public class DetailsActivity extends AppCompatActivity {
-
     WebView webView;
     ProgressBar loader;
     String url = "";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
