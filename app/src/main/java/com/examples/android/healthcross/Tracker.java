@@ -19,33 +19,23 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.app.ActivityManager;
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-
 import java.util.Calendar;
 
 public class Tracker extends AppCompatActivity implements SensorEventListener {
-    Intent mServiceIntent;
 
-    private SensorService mSensorService;
-    Context ctx;
-    public Context getCtx() {
-        return ctx;}
-        TextView tv_steps;
-        SensorManager sensorManager;
-        boolean running = false;
+    TextView tv_steps;
+    SensorManager sensorManager;
+    boolean running = false;
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
+    private int steps;
 
     @SuppressLint("ServiceCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tracker);
+        startService(new Intent(getBaseContext(),SensorService.class));
         tv_steps = (TextView) findViewById(R.id.tv_steps);
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.Drawer_Layout);
@@ -94,16 +84,11 @@ public class Tracker extends AppCompatActivity implements SensorEventListener {
                     }
                 });
 
-        ctx = this;
-        setContentView(R.layout.activity_tracker);
-        mSensorService = new SensorService(getCtx());
-        mServiceIntent = new Intent(getCtx(), mSensorService.getClass());
-        if (!isMyServiceRunning(mSensorService.getClass())) {
-            startService(mServiceIntent);
-        }
+
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
+
 
 
     @Override
@@ -127,6 +112,7 @@ public class Tracker extends AppCompatActivity implements SensorEventListener {
         return super.onOptionsItemSelected(item);
     }
 
+    
 
 
 
@@ -163,29 +149,6 @@ public class Tracker extends AppCompatActivity implements SensorEventListener {
                 Toast.LENGTH_SHORT).show();
 
     }
-
-    
-    private boolean isMyServiceRunning(Class<?> serviceClass) {
-        ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
-        for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
-            if (serviceClass.getName().equals(service.service.getClassName())) {
-                Log.i ("isMyServiceRunning?", true+"");
-                return true;
-            }
-        }
-        Log.i ("isMyServiceRunning?", false+"");
-        return false;
-    }
-
-
-    @Override
-    protected void onDestroy() {
-        stopService(mServiceIntent);
-        Log.i("MAINACT", "onDestroy!");
-        super.onDestroy();
-
-    }
-
 
     @Override
     public void onSensorChanged(SensorEvent event) {

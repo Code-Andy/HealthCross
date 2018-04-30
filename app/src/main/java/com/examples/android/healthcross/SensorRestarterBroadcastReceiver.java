@@ -8,7 +8,7 @@ import android.util.Log;
 public class SensorRestarterBroadcastReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
-        Log.i(SensorRestarterBroadcastReceiver.class.getSimpleName(), "Service Stops!");
-        context.startService(new Intent(context, SensorService.class));
+        Intent service  = new Intent(context,SensorService.class);
+        context.startService(service);
     }
 }

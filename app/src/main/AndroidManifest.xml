@@ -5,7 +5,7 @@
     <uses-sdk android:minSdkVersion="14" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -65,18 +65,10 @@
             android:screenOrientation="portrait" />
         <activity android:name=".Flu" />
 
-        <service
-            android:name="com.examples.android.healthcross.SensorService"
-            android:enabled="true" >
-        </service>
-
-        <receiver
-            android:name="com.examples.android.healthcross.SensorRestarterBroadcastReceiver"
-            android:enabled="true"
-            android:exported="true"
-            android:label="RestartServiceWhenStopped">
+        <receiver android:name=".SensorRestarterBroadcastReceiver">
             <intent-filter>
-                <action android:name="com.examples.android.healthcross.RestartSensor"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
     </application>

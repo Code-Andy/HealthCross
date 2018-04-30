@@ -101,19 +101,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
 
-                            <TextView
-                                android:id="@+id/calendaricon"
-                                android:layout_centerHorizontal="true"
-                                android:text="Open"
-                                android:textColor="@color/colorFont"
-                                android:textSize="25sp"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="30dp" />
 
                             <TextView
                                 android:layout_centerHorizontal="true"
-                                android:text="Med Calendar"
+                                android:text="Open Med Calendar"
                                 android:textColor="@color/colorFont"
                                 android:textSize="25sp"
                                 android:layout_width="wrap_content"
