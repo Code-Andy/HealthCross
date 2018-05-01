@@ -64,6 +64,9 @@
             android:name=".Cut"
             android:screenOrientation="portrait" />
         <activity android:name=".Flu" />
+        <activity
+            android:name=".DetailsActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

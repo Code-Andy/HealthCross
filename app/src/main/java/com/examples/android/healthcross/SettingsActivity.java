@@ -9,13 +9,6 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import java.util.Locale;
-import android.os.Bundle;
-import android.app.Activity;
-import android.content.Intent;
-import android.content.res.Configuration;
-import android.content.res.Resources;
-import android.util.DisplayMetrics;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -28,12 +21,12 @@ public class SettingsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
 
 
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.Drawer_Layout);
+        mDrawerLayout = findViewById(R.id.Drawer_Layout);
         mToggle =  new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open,R.string.close);
         mDrawerLayout.addDrawerListener(mToggle);
         mToggle.syncState();
 
-        NavigationView navigationView = (NavigationView)findViewById(R.id.navview);
+        NavigationView navigationView = findViewById(R.id.navview);
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -53,7 +46,10 @@ public class SettingsActivity extends AppCompatActivity {
                             startActivity(tracker);
                         }
 
-
+                        if (newitem == R.id.tracker) {
+                            Intent tracker = new Intent(SettingsActivity.this, Tracker.class);
+                            startActivity(tracker);
+                        }
 
                         if (newitem == R.id.home) {
                             Intent home = new Intent(SettingsActivity.this, MainActivity.class);

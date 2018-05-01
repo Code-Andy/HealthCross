@@ -13,20 +13,26 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true">
 
-        <ListView
-            android:id="@+id/listNews"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#FFFFFF"
-            android:divider="#F5F5F5"
-            android:dividerHeight="1dp"
-            android:visibility="visible" />
-
-        <ProgressBar
-            android:id="@+id/loader"
+        <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true" />
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/listNews"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:divider="#F5F5F5"
+                android:dividerHeight="1dp"
+                android:visibility="visible" />
+
+            <ProgressBar
+                android:id="@+id/loader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
 
 
         <android.support.design.widget.NavigationView

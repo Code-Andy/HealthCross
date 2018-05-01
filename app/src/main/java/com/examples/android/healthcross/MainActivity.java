@@ -11,23 +11,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-
 public class MainActivity extends AppCompatActivity {
 
 
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
-
-
-    ArrayList<HashMap<String, String>> dataList = new ArrayList<HashMap<String, String>>();
-    static final String KEY_AUTHOR = "author";
-    static final String KEY_TITLE = "title";
-    static final String KEY_DESCRIPTION = "description";
-    static final String KEY_URL = "url";
-    static final String KEY_URLTOIMAGE = "urlToImage";
-    static final String KEY_PUBLISHEDAT = "publishedAt";
 
 
     @Override
@@ -59,6 +47,11 @@ public class MainActivity extends AppCompatActivity {
                         if (newitem == R.id.about) {
                             Intent info = new Intent(MainActivity.this, InfoActivity.class);
                             startActivity(info);
+                        }
+
+                        if (newitem == R.id.tracker) {
+                            Intent tracker = new Intent(MainActivity.this, Tracker.class);
+                            startActivity(tracker);
                         }
 
                         if (newitem == R.id.tracker) {

@@ -1,12 +1,12 @@
 package com.examples.android.healthcross;
 
 import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.net.Uri;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -23,12 +23,12 @@ public class Splinters extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splinters);
 
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.Drawer_Layout);
+        mDrawerLayout = findViewById(R.id.Drawer_Layout);
         mToggle =  new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open,R.string.close);
         mDrawerLayout.addDrawerListener(mToggle);
         mToggle.syncState();
 
-        NavigationView navigationView = (NavigationView)findViewById(R.id.navview);
+        NavigationView navigationView = findViewById(R.id.navview);
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -47,6 +47,11 @@ public class Splinters extends AppCompatActivity {
                         if (newitem == R.id.settings) {
                             Intent setting = new Intent(Splinters.this, SettingsActivity.class);
                             startActivity(setting);
+                        }
+
+                        if (newitem == R.id.tracker) {
+                            Intent tracker = new Intent(Splinters.this, Tracker.class);
+                            startActivity(tracker);
                         }
 
                         if (newitem == R.id.home) {

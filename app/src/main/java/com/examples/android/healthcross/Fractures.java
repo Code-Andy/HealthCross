@@ -9,7 +9,6 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 public class Fractures extends AppCompatActivity {
 
@@ -24,12 +23,12 @@ public class Fractures extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fractures);
 
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.Drawer_Layout);
+        mDrawerLayout = findViewById(R.id.Drawer_Layout);
         mToggle =  new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open,R.string.close);
         mDrawerLayout.addDrawerListener(mToggle);
         mToggle.syncState();
 
-        NavigationView navigationView = (NavigationView)findViewById(R.id.navview);
+        NavigationView navigationView = findViewById(R.id.navview);
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -48,6 +47,11 @@ public class Fractures extends AppCompatActivity {
                         if (newitem == R.id.settings) {
                             Intent setting = new Intent(Fractures.this, SettingsActivity.class);
                             startActivity(setting);
+                        }
+
+                        if (newitem == R.id.tracker) {
+                            Intent tracker = new Intent(Fractures.this, Tracker.class);
+                            startActivity(tracker);
                         }
 
                         if (newitem == R.id.home) {

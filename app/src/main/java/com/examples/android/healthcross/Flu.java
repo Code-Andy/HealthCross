@@ -23,12 +23,12 @@ public class Flu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flu);
 
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.Drawer_Layout);
+        mDrawerLayout = findViewById(R.id.Drawer_Layout);
         mToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open, R.string.close);
         mDrawerLayout.addDrawerListener(mToggle);
         mToggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.navview);
+        NavigationView navigationView = findViewById(R.id.navview);
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -47,6 +47,11 @@ public class Flu extends AppCompatActivity {
                         if (newitem == R.id.settings) {
                             Intent setting = new Intent(Flu.this, SettingsActivity.class);
                             startActivity(setting);
+                        }
+
+                        if (newitem == R.id.tracker) {
+                            Intent tracker = new Intent(Flu.this, Tracker.class);
+                            startActivity(tracker);
                         }
 
                         if (newitem == R.id.home) {
