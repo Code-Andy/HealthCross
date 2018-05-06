@@ -16,7 +16,6 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/colorBackground"
             android:fillViewport="true"
             android:scrollbarStyle="insideOverlay"
             android:scrollbars="vertical">
@@ -46,8 +45,7 @@
                         android:layout_marginRight="5dp"
                         android:layout_marginTop="8dp"
                         android:onClick="openFracturesActivity"
-                        app:cardCornerRadius="6dp"
-                        app:cardElevation="8dp">
+                        app:cardCornerRadius="2dp">
 
                         <RelativeLayout
                             android:layout_width="wrap_content"
@@ -70,8 +68,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:text="Fractures"
                                 android:textColor="@color/colorFont"
-                                android:textSize="18sp"
-                                android:textStyle="bold" />
+                                android:textSize="18sp" />
 
 
                         </RelativeLayout>
@@ -87,8 +84,7 @@
                         android:layout_marginRight="6dp"
                         android:layout_marginTop="8dp"
                         android:onClick="openBurnsActivity"
-                        app:cardCornerRadius="6dp"
-                        app:cardElevation="8dp">
+                        app:cardCornerRadius="2dp">
                         <!-- Row 1 -->
                         <!-- Column 2 -->
                         <RelativeLayout
@@ -112,8 +108,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:text="Burns"
                                 android:textColor="@color/colorFont"
-                                android:textSize="18sp"
-                                android:textStyle="bold" />
+                                android:textSize="18sp" />
 
 
                         </RelativeLayout>
@@ -130,8 +125,7 @@
                         android:layout_marginRight="5dp"
                         android:layout_marginTop="16dp"
                         android:onClick="openCutActivity"
-                        app:cardCornerRadius="6dp"
-                        app:cardElevation="8dp">
+                        app:cardCornerRadius="2dp">
 
                         <RelativeLayout
                             android:layout_width="wrap_content"
@@ -154,8 +148,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:text="Cuts"
                                 android:textColor="@color/colorFont"
-                                android:textSize="18sp"
-                                android:textStyle="bold" />
+                                android:textSize="18sp" />
 
 
                         </RelativeLayout>
@@ -172,8 +165,7 @@
                         android:layout_marginRight="6dp"
                         android:layout_marginTop="16dp"
                         android:onClick="openScrapesActivity"
-                        app:cardCornerRadius="6dp"
-                        app:cardElevation="8dp">
+                        app:cardCornerRadius="2dp">
 
                         <RelativeLayout
                             android:layout_width="wrap_content"
@@ -196,8 +188,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:text="Scrapes"
                                 android:textColor="@color/colorFont"
-                                android:textSize="18sp"
-                                android:textStyle="bold" />
+                                android:textSize="18sp" />
 
 
                         </RelativeLayout>
@@ -214,8 +205,7 @@
                         android:layout_marginRight="5dp"
                         android:layout_marginTop="16dp"
                         android:onClick="openPuncturesActivity"
-                        app:cardCornerRadius="6dp"
-                        app:cardElevation="8dp">
+                        app:cardCornerRadius="2dp">
 
                         <RelativeLayout
                             android:layout_width="wrap_content"
@@ -238,8 +228,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:text="Punctures"
                                 android:textColor="@color/colorFont"
-                                android:textSize="18sp"
-                                android:textStyle="bold" />
+                                android:textSize="18sp" />
 
 
                         </RelativeLayout>
@@ -256,8 +245,7 @@
                         android:layout_marginRight="6dp"
                         android:layout_marginTop="16dp"
                         android:onClick="openSplintersActivity"
-                        app:cardCornerRadius="6dp"
-                        app:cardElevation="8dp">
+                        app:cardCornerRadius="2dp">
 
                         <RelativeLayout
                             android:layout_width="wrap_content"
@@ -280,8 +268,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:text="Splinters"
                                 android:textColor="@color/colorFont"
-                                android:textSize="18sp"
-                                android:textStyle="bold" />
+                                android:textSize="18sp" />
 
 
                         </RelativeLayout>
@@ -298,8 +285,7 @@
                         android:layout_marginRight="5dp"
                         android:layout_marginTop="16dp"
                         android:onClick="openCPRActivity"
-                        app:cardCornerRadius="6dp"
-                        app:cardElevation="8dp">
+                        app:cardCornerRadius="2dp">
 
                         <RelativeLayout
                             android:layout_width="wrap_content"
@@ -322,8 +308,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:text="CPR"
                                 android:textColor="@color/colorFont"
-                                android:textSize="18sp"
-                                android:textStyle="bold" />
+                                android:textSize="18sp" />
 
 
                         </RelativeLayout>
@@ -340,8 +325,7 @@
                         android:layout_marginRight="6dp"
                         android:layout_marginTop="16dp"
                         android:onClick="openFluActivity"
-                        app:cardCornerRadius="6dp"
-                        app:cardElevation="8dp">
+                        app:cardCornerRadius="2dp">
 
                         <RelativeLayout
                             android:layout_width="wrap_content"
@@ -364,8 +348,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:text="Flu"
                                 android:textColor="@color/colorFont"
-                                android:textSize="18sp"
-                                android:textStyle="bold" />
+                                android:textSize="18sp" />
 
 
                         </RelativeLayout>

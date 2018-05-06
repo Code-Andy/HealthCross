@@ -112,7 +112,7 @@ public class Tracker extends AppCompatActivity implements SensorEventListener {
         return super.onOptionsItemSelected(item);
     }
 
-    
+
 
 
 

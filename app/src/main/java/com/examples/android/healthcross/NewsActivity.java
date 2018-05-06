@@ -29,7 +29,7 @@ public class NewsActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
 
-    String API_KEY = "f5a06233721f46d180a5b2f8c21aab8b"; // ### YOUE NEWS API HERE ###
+    String API_KEY = "f5a06233721f46d180a5b2f8c21aab8b"; // ### YOUR NEWS API HERE ###
     String NEWS_SOURCE = "bbc-news";
     ListView listNews;
     ProgressBar loader;
@@ -47,8 +47,8 @@ public class NewsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news);
 
-        listNews = findViewById(R.id.listNews);
-        loader = findViewById(R.id.loader);
+        listNews = (ListView) findViewById(R.id.listNews);
+        loader = (ProgressBar) findViewById(R.id.loader);
         listNews.setEmptyView(loader);
 
 
@@ -144,7 +144,7 @@ public class NewsActivity extends AppCompatActivity {
             String xml = "";
 
             String urlParameters = "";
-            xml = Function.excuteGet("https://newsapi.org/v1/articles?source=" + NEWS_SOURCE + "&sortBy=top&apiKey=" + API_KEY, urlParameters);
+            xml = Function.excuteGet("https://newsapi.org/v1/articles?source=" +NEWS_SOURCE+ "&sortBy=top&apiKey="+API_KEY, urlParameters);
             return xml;
         }
 
@@ -178,9 +178,9 @@ public class NewsActivity extends AppCompatActivity {
                 listNews.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     public void onItemClick(AdapterView<?> parent, View view,
                                             int position, long id) {
-                        Intent i = new Intent(NewsActivity.this, DetailsActivity.class);
-                        i.putExtra("url", dataList.get(+position).get(KEY_URL));
-                        startActivity(i);
+                        Intent s = new Intent(NewsActivity.this, DetailsActivity.class);
+                        s.putExtra("url", dataList.get(+position).get(KEY_URL));
+                        startActivity(s);
                     }
                 });
 

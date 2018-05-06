@@ -1,9 +1,5 @@
 package com.examples.android.healthcross;
 
-/**
- * Created by Andy on 4/28/2018.
- */
-
 import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,10 +12,6 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-
-/**
- * Created by SHAJIB-PC on 10/23/2017.
- */
 
 class ListNewsAdapter extends BaseAdapter {
     private Activity activity;
@@ -48,11 +40,11 @@ class ListNewsAdapter extends BaseAdapter {
             holder = new ListNewsViewHolder();
             convertView = LayoutInflater.from(activity).inflate(
                     R.layout.list_row, parent, false);
-            holder.galleryImage = convertView.findViewById(R.id.galleryImage);
-            holder.author = convertView.findViewById(R.id.author);
-            holder.title = convertView.findViewById(R.id.title);
-            holder.sdetails = convertView.findViewById(R.id.sdetails);
-            holder.time = convertView.findViewById(R.id.time);
+            holder.galleryImage = (ImageView) convertView.findViewById(R.id.galleryImage);
+            holder.author = (TextView) convertView.findViewById(R.id.author);
+            holder.title = (TextView) convertView.findViewById(R.id.title);
+            holder.sdetails = (TextView) convertView.findViewById(R.id.sdetails);
+            holder.time = (TextView) convertView.findViewById(R.id.time);
             convertView.setTag(holder);
         } else {
             holder = (ListNewsViewHolder) convertView.getTag();
