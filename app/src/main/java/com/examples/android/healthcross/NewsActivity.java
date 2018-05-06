@@ -85,8 +85,8 @@ public class NewsActivity extends AppCompatActivity {
                             startActivity(tracker);
                         }
 
-                        if (newitem == R.id.tracker) {
-                            Intent tracker = new Intent(NewsActivity.this, Tracker.class);
+                        if (newitem == R.id.news) {
+                            Intent tracker = new Intent(NewsActivity.this, NewsActivity.class);
                             startActivity(tracker);
                         }
 
@@ -144,7 +144,7 @@ public class NewsActivity extends AppCompatActivity {
             String xml = "";
 
             String urlParameters = "";
-            xml = Function.excuteGet("https://newsapi.org/v1/articles?source=" + NEWS_SOURCE + "&sortBy=top&apiKey=" + API_KEY, urlParameters);
+            xml = Function.excuteGet("https://newsapi.org/v2/top-headlines?country=us&country=ca&category=health" + "&apiKey=" + API_KEY, urlParameters);
             return xml;
         }
 

@@ -17,10 +17,6 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-/**
- * Created by SHAJIB-PC on 10/23/2017.
- */
-
 class ListNewsAdapter extends BaseAdapter {
     private Activity activity;
     private ArrayList<HashMap<String, String>> data;
@@ -66,11 +62,15 @@ class ListNewsAdapter extends BaseAdapter {
         HashMap<String, String> song = new HashMap<String, String>();
         song = data.get(position);
 
+
+
+
         try {
             holder.author.setText(song.get(NewsActivity.KEY_AUTHOR));
             holder.title.setText(song.get(NewsActivity.KEY_TITLE));
             holder.time.setText(song.get(NewsActivity.KEY_PUBLISHEDAT));
             holder.sdetails.setText(song.get(NewsActivity.KEY_DESCRIPTION));
+
 
             if (song.get(NewsActivity.KEY_URLTOIMAGE).toString().length() < 5) {
                 holder.galleryImage.setVisibility(View.GONE);
