@@ -47,6 +47,7 @@
                         android:layout_marginRight="5dp"
                         android:layout_marginTop="8dp"
                         android:onClick="openFracturesActivity"
+                        app:cardElevation="4dp"
                         app:cardCornerRadius="2dp">
 
                         <RelativeLayout
@@ -86,6 +87,7 @@
                         android:layout_marginRight="6dp"
                         android:layout_marginTop="8dp"
                         android:onClick="openBurnsActivity"
+                        app:cardElevation="4dp"
                         app:cardCornerRadius="2dp">
                         <!-- Row 1 -->
                         <!-- Column 2 -->
@@ -127,6 +129,7 @@
                         android:layout_marginRight="5dp"
                         android:layout_marginTop="16dp"
                         android:onClick="openCutActivity"
+                        app:cardElevation="4dp"
                         app:cardCornerRadius="2dp">
 
                         <RelativeLayout
@@ -167,6 +170,7 @@
                         android:layout_marginRight="6dp"
                         android:layout_marginTop="16dp"
                         android:onClick="openScrapesActivity"
+                        app:cardElevation="4dp"
                         app:cardCornerRadius="2dp">
 
                         <RelativeLayout
@@ -207,6 +211,7 @@
                         android:layout_marginRight="5dp"
                         android:layout_marginTop="16dp"
                         android:onClick="openPuncturesActivity"
+                        app:cardElevation="4dp"
                         app:cardCornerRadius="2dp">
 
                         <RelativeLayout
@@ -247,6 +252,7 @@
                         android:layout_marginRight="6dp"
                         android:layout_marginTop="16dp"
                         android:onClick="openSplintersActivity"
+                        app:cardElevation="4dp"
                         app:cardCornerRadius="2dp">
 
                         <RelativeLayout
@@ -287,6 +293,7 @@
                         android:layout_marginRight="5dp"
                         android:layout_marginTop="16dp"
                         android:onClick="openCPRActivity"
+                        app:cardElevation="4dp"
                         app:cardCornerRadius="2dp">
 
                         <RelativeLayout
@@ -327,6 +334,7 @@
                         android:layout_marginRight="6dp"
                         android:layout_marginTop="16dp"
                         android:onClick="openFluActivity"
+                        app:cardElevation="4dp"
                         app:cardCornerRadius="2dp">
 
                         <RelativeLayout
