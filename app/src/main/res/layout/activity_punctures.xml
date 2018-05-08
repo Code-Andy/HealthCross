@@ -16,7 +16,6 @@
 
 
         <ScrollView
-            android:background="@color/colorBackground"
             android:scrollbars = "vertical"
             android:scrollbarStyle="insideOverlay"
             android:layout_width="wrap_content"
@@ -46,7 +45,7 @@
                     android:layout_marginLeft="6dp"
                     android:layout_marginRight="6dp"
                     app:cardElevation="6dp"
-                    app:cardCornerRadius="6dp"
+                    app:cardCornerRadius="2dp"
                     >
 
                     <LinearLayout
@@ -81,7 +80,7 @@
                     android:layout_marginLeft="6dp"
                     android:layout_marginRight="6dp"
                     app:cardElevation="6dp"
-                    app:cardCornerRadius="6dp"
+                    app:cardCornerRadius="2dp"
                     >
 
                     <LinearLayout
@@ -115,7 +114,7 @@
                     android:layout_marginLeft="6dp"
                     android:layout_marginRight="6dp"
                     app:cardElevation="6dp"
-                    app:cardCornerRadius="6dp"
+                    app:cardCornerRadius="2dp"
                     >
                     <!-- Row 2 -->
                     <LinearLayout
@@ -148,7 +147,7 @@
                     android:layout_marginLeft="6dp"
                     android:layout_marginRight="6dp"
                     app:cardElevation="6dp"
-                    app:cardCornerRadius="6dp"
+                    app:cardCornerRadius="2dp"
                     >
 
                     <LinearLayout
@@ -181,7 +180,7 @@
                     android:layout_marginLeft="6dp"
                     android:layout_marginRight="6dp"
                     app:cardElevation="6dp"
-                    app:cardCornerRadius="6dp"
+                    app:cardCornerRadius="2dp"
                     >
 
                     <LinearLayout
@@ -214,7 +213,7 @@
                     android:layout_marginLeft="6dp"
                     android:layout_marginRight="6dp"
                     app:cardElevation="6dp"
-                    app:cardCornerRadius="6dp"
+                    app:cardCornerRadius="2dp"
                     >
 
                     <LinearLayout
@@ -247,7 +246,7 @@
                     android:layout_marginLeft="6dp"
                     android:layout_marginRight="6dp"
                     app:cardElevation="6dp"
-                    app:cardCornerRadius="6dp"
+                    app:cardCornerRadius="2dp"
                     >
 
                     <LinearLayout
