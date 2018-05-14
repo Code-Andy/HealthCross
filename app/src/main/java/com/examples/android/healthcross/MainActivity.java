@@ -36,6 +36,10 @@ import java.util.UUID;
 public class MainActivity extends AppCompatActivity {
 
 
+    // Make new bluetooth from class^^
+    // Return a value from the click when button is clicked
+
+
 
 
     private DrawerLayout mDrawerLayout;
@@ -447,49 +451,66 @@ public class MainActivity extends AppCompatActivity {
 
     public void openCutActivity(View view) {
         Intent cut = new Intent(MainActivity.this, Cut.class);
-        mConnectedThread.write("1");
+        if(mConnectedThread != null) {//First check to make sure thread created
+            mConnectedThread.write("1");
+    }
         startActivity(cut);
+
     }
 
     public void openFracturesActivity(View view) {
         Intent fractures = new Intent(MainActivity.this, Fractures.class);
-        mConnectedThread.write("2");
+        if(mConnectedThread != null) {//First check to make sure thread created
+            mConnectedThread.write("2");
+        }
         startActivity(fractures);
     }
 
     public void openBurnsActivity(View view) {
         Intent burns = new Intent(MainActivity.this, Burns.class);
-        mConnectedThread.write("3");
+        if(mConnectedThread != null) {//First check to make sure thread created
+            mConnectedThread.write("3");
+        }
         startActivity(burns);
     }
 
     public void openScrapesActivity(View view) {
         Intent scrapes = new Intent(MainActivity.this, Scrapes.class);
-        mConnectedThread.write("4");
+        if(mConnectedThread != null) {//First check to make sure thread created
+            mConnectedThread.write("4");
+        }
         startActivity(scrapes);
     }
 
     public void openPuncturesActivity(View view) {
         Intent punctures = new Intent(MainActivity.this, Punctures.class);
-        mConnectedThread.write("5");
+        if(mConnectedThread != null) {//First check to make sure thread created
+            mConnectedThread.write("5");
+        }
         startActivity(punctures);
     }
 
     public void openSplintersActivity(View view) {
         Intent splinters = new Intent(MainActivity.this, Splinters.class);
-        mConnectedThread.write("6");
+        if(mConnectedThread != null) {//First check to make sure thread created
+            mConnectedThread.write("6");
+        }
         startActivity(splinters);
     }
 
     public void openCPRActivity(View view) {
         Intent cpr = new Intent(MainActivity.this, CPR.class);
-        mConnectedThread.write("7");
+        if(mConnectedThread != null) {//First check to make sure thread created
+            mConnectedThread.write("7");
+        }
         startActivity(cpr);
     }
 
     public void openFluActivity(View view) {
         Intent flu = new Intent(MainActivity.this, Flu.class);
-        mConnectedThread.write("8");
+        if(mConnectedThread != null) {//First check to make sure thread created
+            mConnectedThread.write("8");
+        }
         startActivity(flu);
     }
 

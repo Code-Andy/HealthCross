@@ -170,7 +170,7 @@ public class Tracker extends AppCompatActivity implements SensorEventListener {
         displayQuantity(numberOfCoffee);
     }
     /**
-
+    openCutActivity();
      This method displays the given quantity value on the screen.\
      */
     private void displayQuantity(int number) {
