@@ -15,6 +15,7 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -55,6 +56,12 @@ public class MainActivity extends AppCompatActivity {
     private ArrayAdapter<String> mBTArrayAdapter;
     private ListView mDevicesListView;
     private CheckBox mLED1;
+    private CardView mCut;
+    private CardView mBurn;
+    private CardView mFracture;
+    private CardView mScrapes;
+
+
 
     private Handler mHandler; // Our main handler that will receive callback notifications
     private ConnectedThread mConnectedThread; // bluetooth background worker thread to send and receive data
@@ -88,6 +95,12 @@ public class MainActivity extends AppCompatActivity {
         mDiscoverBtn = (Button)findViewById(R.id.discover);
         mListPairedDevicesBtn = (Button)findViewById(R.id.PairedBtn);
         mLED1 = (CheckBox)findViewById(R.id.checkboxLED1);
+
+        mCut = findViewById(R.id.cuts);
+        mFracture = findViewById(R.id.fracture);
+        mBurn = findViewById(R.id.burn);
+        mScrapes = findViewById(R.id.scrapes);
+
 
         mBTArrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1);
         mBTAdapter = BluetoothAdapter.getDefaultAdapter(); // get a handle on the bluetooth radio
@@ -134,6 +147,47 @@ public class MainActivity extends AppCompatActivity {
                         mConnectedThread.write("1");
                 }
             });
+
+            mCut.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View v){
+                    Intent cut = new Intent(MainActivity.this, Cut.class);
+                    startActivity(cut);
+                    if(mConnectedThread != null) //First check to make sure thread created
+                        mConnectedThread.write("1");
+                }
+            });
+
+            mBurn.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View v){
+                    Intent fractures = new Intent(MainActivity.this, Fractures.class);
+                    startActivity(fractures);
+                    if(mConnectedThread != null) //First check to make sure thread created
+                        mConnectedThread.write("2");
+                }
+            });
+
+            mFracture.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View v){
+                    Intent burns = new Intent(MainActivity.this, Burns.class);
+                    startActivity(burns);
+                    if(mConnectedThread != null) //First check to make sure thread created
+                        mConnectedThread.write("3");
+                }
+            });
+
+            mScrapes.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View v){
+                    Intent scrapes = new Intent(MainActivity.this, Scrapes.class);
+                    startActivity(scrapes);
+                    if(mConnectedThread != null) //First check to make sure thread created
+                        mConnectedThread.write("4");
+                }
+            });
+
 
 
             mScanBtn.setOnClickListener(new View.OnClickListener() {
@@ -449,38 +503,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public void openCutActivity(View view) {
-        Intent cut = new Intent(MainActivity.this, Cut.class);
-        if(mConnectedThread != null) {//First check to make sure thread created
-            mConnectedThread.write("1");
-    }
-        startActivity(cut);
 
-    }
-
-    public void openFracturesActivity(View view) {
-        Intent fractures = new Intent(MainActivity.this, Fractures.class);
-        if(mConnectedThread != null) {//First check to make sure thread created
-            mConnectedThread.write("2");
-        }
-        startActivity(fractures);
-    }
-
-    public void openBurnsActivity(View view) {
-        Intent burns = new Intent(MainActivity.this, Burns.class);
-        if(mConnectedThread != null) {//First check to make sure thread created
-            mConnectedThread.write("3");
-        }
-        startActivity(burns);
-    }
-
-    public void openScrapesActivity(View view) {
-        Intent scrapes = new Intent(MainActivity.this, Scrapes.class);
-        if(mConnectedThread != null) {//First check to make sure thread created
-            mConnectedThread.write("4");
-        }
-        startActivity(scrapes);
-    }
 
     public void openPuncturesActivity(View view) {
         Intent punctures = new Intent(MainActivity.this, Punctures.class);

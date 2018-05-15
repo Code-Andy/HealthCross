@@ -40,6 +40,7 @@
                     <!-- Row 1 -->
                     <!-- Column 1 -->
                     <android.support.v7.widget.CardView
+                        android:id="@+id/fracture"
                         android:layout_width="0dp"
                         android:layout_height="120dp"
                         android:layout_columnWeight="1"
@@ -49,6 +50,8 @@
                         android:onClick="openFracturesActivity"
                         app:cardElevation="4dp"
                         app:cardCornerRadius="2dp">
+
+
 
                         <RelativeLayout
                             android:layout_width="wrap_content"
@@ -73,13 +76,15 @@
                                 android:textColor="@color/colorFont"
                                 android:textSize="18sp" />
 
-
                         </RelativeLayout>
+
+
 
                     </android.support.v7.widget.CardView>
                     <!-- Row 1 -->
                     <!-- Column 2 -->
                     <android.support.v7.widget.CardView
+                        android:id="@+id/burn"
                         android:layout_width="0dp"
                         android:layout_height="120dp"
                         android:layout_columnWeight="1"
@@ -122,6 +127,7 @@
                     <!-- Row 2 -->
                     <!-- Column 1 -->
                     <android.support.v7.widget.CardView
+                        android:id="@+id/cuts"
                         android:layout_width="0dp"
                         android:layout_height="120dp"
                         android:layout_columnWeight="1"
@@ -163,6 +169,7 @@
                     <!-- Row 2 -->
                     <!-- Column 2 -->
                     <android.support.v7.widget.CardView
+                        android:id="@+id/scrapes"
                         android:layout_width="0dp"
                         android:layout_height="120dp"
                         android:layout_columnWeight="1"
