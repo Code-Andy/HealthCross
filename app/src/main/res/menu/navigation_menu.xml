@@ -16,10 +16,6 @@
         android:title="Health Tracker">
     </item>
 
-    <item android:id="@+id/settings"
-        android:icon="@drawable/settings"
-        android:title="Settings">
-    </item>
 
     <item android:id="@+id/about"
         android:icon="@drawable/info"

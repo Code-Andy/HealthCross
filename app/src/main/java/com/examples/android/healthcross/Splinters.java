@@ -44,11 +44,6 @@ public class Splinters extends AppCompatActivity {
                             startActivity(info);
                         }
 
-                        if (newitem == R.id.settings) {
-                            Intent setting = new Intent(Splinters.this, SettingsActivity.class);
-                            startActivity(setting);
-                        }
-
                         if (newitem == R.id.tracker) {
                             Intent tracker = new Intent(Splinters.this, Tracker.class);
                             startActivity(tracker);

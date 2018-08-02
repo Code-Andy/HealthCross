@@ -22,7 +22,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Contributors For This Project"
+                android:text="Created by"
                 android:textStyle="bold"
                 android:textSize="24sp"
                 android:layout_gravity="center"/>
@@ -39,43 +39,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:text="Falak Somani"
-                android:textSize="20sp"
-                android:layout_gravity="center"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:text="Vinesh Vivekanand"
-                android:textSize="20sp"
-                android:layout_gravity="center"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:text="Andy Yang"
-                android:textSize="20sp"
-                android:layout_gravity="center"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
                 android:text="Andy Zhang"
                 android:textSize="20sp"
                 android:layout_gravity="center"/>
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="16dp"
-                android:text="Special Thanks to Mr. Clarke"
-                android:textSize="21sp"
-                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -93,6 +60,15 @@
                 android:text="Project Created: 02/21/18"
                 android:textSize="20sp"
                 android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="May Experience Glitches With Step Counter"
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+
 
             <TextView
                 android:layout_width="wrap_content"

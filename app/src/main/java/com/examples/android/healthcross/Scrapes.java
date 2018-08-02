@@ -44,11 +44,6 @@ public class Scrapes extends AppCompatActivity {
                             startActivity(info);
                         }
 
-                        if (newitem == R.id.settings) {
-                            Intent setting = new Intent(Scrapes.this, SettingsActivity.class);
-                            startActivity(setting);
-                        }
-
                         if (newitem == R.id.tracker) {
                             Intent tracker = new Intent(Scrapes.this, Tracker.class);
                             startActivity(tracker);

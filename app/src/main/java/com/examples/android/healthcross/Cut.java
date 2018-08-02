@@ -44,10 +44,6 @@ public class Cut extends AppCompatActivity {
                             startActivity(info);
                         }
 
-                        if (newitem == R.id.settings) {
-                            Intent setting = new Intent(Cut.this, SettingsActivity.class);
-                            startActivity(setting);
-                        }
 
                         if (newitem == R.id.tracker) {
                             Intent tracker = new Intent(Cut.this, Tracker.class);

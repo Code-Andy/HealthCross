@@ -44,11 +44,6 @@ public class CPR extends AppCompatActivity {
                             startActivity(info);
                         }
 
-                        if (newitem == R.id.settings) {
-                            Intent setting = new Intent(CPR.this, SettingsActivity.class);
-                            startActivity(setting);
-                        }
-
                         if (newitem == R.id.tracker) {
                             Intent tracker = new Intent(CPR.this, Tracker.class);
                             startActivity(tracker);

@@ -59,11 +59,6 @@ public class MainActivity extends AppCompatActivity {
                             startActivity(tracker);
                         }
 
-                        if (newitem == R.id.settings) {
-                            Intent setting = new Intent(MainActivity.this, SettingsActivity.class);
-                            startActivity(setting);
-                        }
-
                         if (newitem == R.id.news) {
                             Intent news = new Intent(MainActivity.this, NewsActivity.class);
                             startActivity(news);

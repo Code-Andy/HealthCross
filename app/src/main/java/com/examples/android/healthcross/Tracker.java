@@ -60,12 +60,6 @@ public class Tracker extends AppCompatActivity implements SensorEventListener {
                             startActivity(info);
                         }
 
-                        if (newitem == R.id.settings) {
-                            Intent settings = new Intent(Tracker.this, SettingsActivity.class);
-                            startActivity(settings);
-                        }
-
-
 
                         if (newitem == R.id.home) {
                             Intent home = new Intent(Tracker.this, MainActivity.class);
@@ -150,35 +144,6 @@ public class Tracker extends AppCompatActivity implements SensorEventListener {
                 Toast.LENGTH_SHORT).show();
 
     }
-
-    int numberOfCoffee = 0;
-
-
-    public void increment(View view) {
-        if (numberOfCoffee == 101){
-            return;
-        }
-        displayQuantity(numberOfCoffee);
-        numberOfCoffee = numberOfCoffee + 1;
-    }
-
-    public void decrement(View view) {
-        if (numberOfCoffee == 0){
-            return;
-        }
-        numberOfCoffee = numberOfCoffee - 1;
-        displayQuantity(numberOfCoffee);
-    }
-    /**
-
-     This method displays the given quantity value on the screen.\
-     */
-    private void displayQuantity(int number) {
-        TextView quantityTextView = (TextView) findViewById(
-                R.id.quantity_text_view);
-        quantityTextView.setText("" + number);
-    }
-
 
     @Override
     public void onSensorChanged(SensorEvent event) {

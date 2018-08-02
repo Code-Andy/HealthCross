@@ -44,11 +44,6 @@ public class Burns extends AppCompatActivity {
                             startActivity(info);
                         }
 
-                        if (newitem == R.id.settings) {
-                            Intent setting = new Intent(Burns.this, SettingsActivity.class);
-                            startActivity(setting);
-                        }
-
                         if (newitem == R.id.tracker) {
                             Intent tracker = new Intent(Burns.this, Tracker.class);
                             startActivity(tracker);

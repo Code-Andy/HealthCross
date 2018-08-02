@@ -44,10 +44,6 @@ public class Fractures extends AppCompatActivity {
                             startActivity(info);
                         }
 
-                        if (newitem == R.id.settings) {
-                            Intent setting = new Intent(Fractures.this, SettingsActivity.class);
-                            startActivity(setting);
-                        }
 
                         if (newitem == R.id.tracker) {
                             Intent tracker = new Intent(Fractures.this, Tracker.class);
